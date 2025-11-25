@@ -8,6 +8,22 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::get('/sobre-nosotros', function () {
+    return view('livewire.about'); 
+})->name('about');
+
+Route::get('/servicios', function () {
+    return view('livewire.services'); 
+})->name('services');
+
+Route::get('/contacto', function () {
+    return view('livewire.contact'); 
+})->name('contact');
+
+Route::get('/ubicacion', function () {
+    return view('livewire.location'); 
+})->name('location');
+
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');

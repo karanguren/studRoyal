@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 @import '../../vendor/livewire/flux/dist/flux.css';
+@import 'flickity/dist/flickity.min.css';
+@import 'photoswipe/dist/photoswipe.css';
 
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -7,6 +9,41 @@
 @source '../../vendor/livewire/flux/stubs/**/*.blade.php';
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+    font-family: 'FortalezaPlain';
+    src: url(../../public/fonts/FortalesiaPlainPERSONALUSE-Regular.woff);
+}
+
+@font-face {
+    font-family: 'MinionPro';
+    src: url(../../public/fonts/MinionPro-Regular.woff);
+}
+
+.FortalezaPlain {
+    font-family: 'FortalezaPlain';
+}
+
+body {
+    font-family: 'MinionPro', sans-serif;
+}
+
+:root {
+    --background: #ffffff;
+    --foreground: #371200;
+    --royal-clay: #A37247;
+    --royal-espresso: #3C4220;
+    --royal-ash: #f1ece6;
+    --royal-mist: #D6D2C4;
+    --border-soft: #3C4220;
+
+    --royal-1: #371200;
+    --royal-2: #4F2900;
+    --royal-3: #A37247;
+    --royal-4: #3C4220;
+    --royal-5: #D6D2C4;
+    --royal-6: #C8AF77;
+}
 
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -64,3 +101,110 @@ select:focus[data-flux-control] {
 /* \[:where(&)\]:size-4 {
     @apply size-4;
 } */
+
+/* Flickity */
+
+.carousel {
+    background: #EEE;
+}
+
+.carousel-cell-image {
+  display: block;
+  height: 400px;
+  width: 601px;
+  margin-right: 0px;
+}
+
+.carousel-cell {
+    width: 100%;
+    height: 100vh;
+    margin-right: 0px;
+}
+
+.flickity-button:hover {
+    background: transparent;
+}
+
+.flickity-button {
+    background: transparent;
+}
+
+.flickity-button-icon {
+    fill: white;
+}
+
+.flickity-page-dots {
+    bottom: 15px;
+}
+
+.flickity-page-dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent !important;
+    border: 2px solid white !important;
+}
+
+.flickity-page-dot.is-selected {
+    background: white !important;
+}
+
+.flickity-page-dot:focus
+{
+    box-shadow: 0 0 0 3px #ffffff5c;
+}
+
+.flickity-button:focus {
+    box-shadow: none !important;
+}
+
+/* Navbar  */
+
+.blur-bg {
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+/* Parrafos */
+
+.paragraph {
+    @apply leading-7 text-[#371200] text-lg ;
+}
+
+.paragraph-italic {
+    @apply leading-7 text-[#371200] text-lg italic ;
+}
+
+/* Titles */
+
+.titles {
+     @apply text-2xl font-bold text-[#7bcb01] dark:text-[#7bcb01];
+}
+
+/* Subtitles */
+
+/* Botones */
+
+.btn-3C4220 {
+    @apply font-medium uppercase tracking-wide px-10 py-3 text-sm text-center inline-block text-white rounded-full transition-all duration-300 bg-[#3C4220] hover:bg-[#3C4220]/60;
+}
+
+/* Inputs */
+
+/* CTA */
+
+.btn-cta {
+    @apply font-medium uppercase tracking-wide px-10 py-3 text-sm text-center inline-block text-white rounded-full transition-all duration-300 bg-[#A37247] hover:bg-[#A37247]/60;
+}
+
+.title-cta {
+    @apply text-4xl md:text-6xl tracking-tight mb-4 text-[#f1ece6];
+}
+
+.paragraph-cta {
+    @apply text-lg text-[#D6D2C4] max-w-6xl mx-auto leading-7 mb-10;
+}
+
+
+
+
