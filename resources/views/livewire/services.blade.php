@@ -8,11 +8,6 @@
         description="En Stud Royal ofrecemos un ecosistema integral de servicios diseñados para elevar el rendimiento, bienestar y linaje de cada ejemplar."
     />
 
-    {{-- <h2 class="text-xs tracking-widest uppercase font-semibold text-gray-500 m-2 text-center">
-        En Stud Royal ofrecemos un ecosistema integral de servicios diseñados para elevar el rendimiento, bienestar y
-        linaje de cada ejemplar.
-    </h2> --}}
-
     <section class="py-16 md:py-24 bg-[#f1ece6]/80">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto">
@@ -57,8 +52,8 @@
                         Estudiamos el linaje, la morfología y la genética de cada ejemplar para asegurar crías de alto rendimiento. Utilizamos técnicas modernas de análisis y fichas de ascendencia que permiten proyectar atributos como velocidad, resistencia y temperamento.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/servicios/4.jpg') }}"
-                            alt="Cría de caballo de alto rendimiento"
+                        <img src="{{ asset('images/servicios/1.jpg') }}"
+                            alt=""
                             class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
@@ -74,8 +69,8 @@
                         Nuestros métodos de entrenamiento combinan biomecánica, observación técnica y herramientas digitales de medición. Cada ejemplar recibe un plan personalizado que optimiza su desempeño sin comprometer su bienestar.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/servicios/5.jpg') }}"
-                            alt="Caballo en entrenamiento en pista"
+                        <img src="{{ asset('images/servicios/2.jpg') }}"
+                            alt=""
                             class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
@@ -89,7 +84,7 @@
                         Aplicamos protocolos modernos de alimentación, descanso, hidratación, rutinas físicas y estimulación emocional. El enfoque prioriza la salud integral del caballo: cuerpo, comportamiento y entorno.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/servicios/6.jpg') }}" alt="Cuidado y bienestar de caballo"
+                        <img src="{{ asset('images/servicios/3.jpg') }}" alt=""
                             class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
@@ -103,8 +98,8 @@
                         Supervisión veterinaria permanente, terapias regenerativas, monitoreos digitales, diagnósticos especializados y planes preventivos que aseguran la longevidad y salud óptima del ejemplar.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/servicios/7.jpg') }}"
-                            alt="Veterinario examinando un caballo"
+                        <img src="{{ asset('images/servicios/4.jpg') }}"
+                            alt=""
                             class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
@@ -119,8 +114,8 @@
                         Acompañamos a los propietarios en decisiones clave: debut, campañas, ritmo de competencia, potencial reproductivo, valorización y proyección del ejemplar.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/servicios/8.jpg') }}"
-                            alt="Estrategias de gestión para caballos"
+                        <img src="{{ asset('images/servicios/5.jpg') }}"
+                            alt=""
                             class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
@@ -135,8 +130,8 @@
                         Asesoramos todo el proceso de carrera: equipamiento, estética del caballo y del equipo, protocolos de pre-pista, paddock y estrategias de presentación.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/servicios/7.jpg') }}"
-                            alt="Jinete preparando caballo para competición"
+                        <img src="{{ asset('images/servicios/6.jpg') }}"
+                            alt=""
                             class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
