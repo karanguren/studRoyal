@@ -1,5 +1,5 @@
 <div>
-    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-md md:backdrop-blur-none md:hover:backdrop-blur-md">
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-md lg:backdrop-blur-none md:hover:backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between md:justify-center relative">
             <ul class="hidden md:flex space-x-6 font-medium order-1 md:mr-12">
                 <li><a href="{{ route('about') }}" class="text-[#A37247] hover:text-[var(--royal-mist)] uppercase">Sobre nosotros</a></li>
