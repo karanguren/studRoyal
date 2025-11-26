@@ -14,11 +14,10 @@
 </header> --}}
 
 <header class="relative w-full lg:h-[43vh] h-[55vh] flex items-center justify-center text-center"
-    style="background-image: url('{{ $backgroundUrl ?? 'default.jpg' }}'); background-size: cover; background-position: center;">
+    style="background-image: url('images/home/1.jpg'); background-size: cover; background-position: center;">
 
     <div class="max-w-4xl mx-auto p-4 w-full">
 
-        <!-- TÍTULO -->
         <p class="text-4xl lg:text-6xl text-white FortalezaPlain 
                    absolute bottom-4 left-1/2 -translate-x-1/2 
                    lg:static lg:translate-x-0 lg:bottom-auto">
@@ -28,7 +27,8 @@
     </div>
 </header>
 
-<!-- DESCRIPCIÓN FUERA DEL HEADER -->
-<p class="text-center text-xs tracking-widest uppercase font-semibold text-gray-500 m-4">
-    {{ $description }}
-</p>
+@if ($description)
+    <p class="text-center text-xs tracking-widest uppercase font-semibold text-gray-500 m-4">
+        {{ $description }}
+    </p>
+@endif

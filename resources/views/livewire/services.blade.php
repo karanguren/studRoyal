@@ -3,9 +3,10 @@
         Servicios | Stud Royal
     </x-slot:title>
 
-    <x-module-header title="Servicios Ecuestres de Excelencia" 
-    description="En Stud Royal ofrecemos un ecosistema integral de servicios diseñados para elevar el rendimiento, bienestar y linaje de cada ejemplar."
-     backgroundUrl="images/home/5.jpg" />
+    <x-module-header 
+        title="Servicios Ecuestres de Excelencia" 
+        description="En Stud Royal ofrecemos un ecosistema integral de servicios diseñados para elevar el rendimiento, bienestar y linaje de cada ejemplar."
+    />
 
     {{-- <h2 class="text-xs tracking-widest uppercase font-semibold text-gray-500 m-2 text-center">
         En Stud Royal ofrecemos un ecosistema integral de servicios diseñados para elevar el rendimiento, bienestar y

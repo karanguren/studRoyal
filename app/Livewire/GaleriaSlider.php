@@ -8,35 +8,12 @@ class GaleriaSlider extends Component
 {
     public $showModal = false;
     public $selectedImage = null; 
+    public $images = []; 
 
-    public $images = [
-        [
-            'id' => 1,
-            'url' => 'images/galeria/1.jpg',
-            'description' => '1',
-        ],
-        [
-            'id' => 2,
-            'url' => 'images/galeria/2.jpg',
-            'description' => '2',
-        ],
-        [
-            'id' => 3,
-            'url' => 'images/galeria/3.jpg',
-            'description' => '3',
-        ],
-        [
-            'id' => 4,
-            'url' => 'images/galeria/4.jpg',
-            'description' => '4',
-        ],
-        [
-            'id' => 5,
-            'url' => 'images/galeria/5.jpg',
-            'description' => '5',
-        ],
-    ];
-
+    public function mount(array $images = [])
+    {
+        $this->images = $images;
+    }
     
     public function openModal($imageId)
     {
@@ -55,9 +32,6 @@ class GaleriaSlider extends Component
     
     public function render()
     {
-        
-        return view('livewire.galeria-slider', [
-            'images' => $this->images,
-        ]);
+        return view('livewire.galeria-slider');
     }
 }

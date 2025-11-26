@@ -3,7 +3,9 @@
         Sobre Nosotros | Stud Royal
     </x-slot:title>
 
-    <x-module-header title="El linaje de la excelencia ecuestre." backgroundUrl="images/home/5.jpg" />
+    <x-module-header 
+        title="El linaje de la excelencia ecuestre." 
+    />
 
 
     <section class="py-16 md:py-24 bg-[#f1ece6]/80">
@@ -20,17 +22,16 @@
         </div>
     </section>
 
-    <section class="py-16 md:py-24 px-4 bg-white">
+    <section id="historia" class="py-16 md:py-24 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8 text-[var(--royal-espresso)] leading-none">
-                <span class="text-6xl mr-1 FortalezaPlain">N</span>uestra Historia: La Evolución de una Casa Hípica
-                Moderna
+            <h2 class="text-3xl font-bold mb-12 text-[var(--royal-espresso)] leading-none text-center">
+                <span class="text-6xl mr-1 FortalezaPlain">N</span>uestra Historia: La Evolución de una Casa Hípica Moderna
             </h2>
 
-            <div class="space-y-10 text-gray-700 relative">
+            <div class="space-y-12 text-gray-700 relative">
 
-                <div class="hidden md:block absolute left-1/2 w-0.5 bg-gray-200 h-full transform -translate-x-1/2">
-                </div>
+                {{-- Línea vertical central (Desktop Only) --}}
+                <div class="hidden md:block absolute left-1/2 w-0.5 bg-gray-200 h-full transform -translate-x-1/2"></div>
 
                 @php
                     $historyItems = [
@@ -47,7 +48,7 @@
                         [
                             'title' => 'El nacimiento de Stud Royal',
                             'text' =>
-                                'La marca se formaliza como respuesta a un nuevo momento del hipismo: propietarios que buscan profesionalización, tecnología, genética, rendimiento medible y una estética impecable.',
+                            'La marca se formaliza como respuesta a un nuevo momento del hipismo: propietarios que buscan profesionalización, tecnología, genética, rendimiento medible y una estética impecable.',
                         ],
                         [
                             'title' => 'Innovación aplicada al desempeño',
@@ -64,25 +65,33 @@
 
                 @foreach ($historyItems as $index => $item)
                     @php
-                        $isLeft = $index % 2 == 0;
+                        $isLeft = $index % 2 == 0; // True para 0, 2, 4 (Izquierda) | False para 1, 3 (Derecha)
                     @endphp
 
-                    <div class="flex md:justify-{{ $isLeft ? 'start' : 'end' }} w-full relative">
+                    <div class="flex w-full relative">
+                        
+                        {{-- Contenedor del Ítem: Controla la posición en desktop. Usamos md:px-12 para crear el espacio --}}
+                        <div class="w-full md:w-1/2 md:px-6 {{ $isLeft ? 'md:mr-auto' : 'md:ml-auto' }} flex {{ $isLeft ? 'md:justify-end' : '' }}">
+                            
+                            {{-- Card del contenido --}}
+                            <div class="w-full max-w-lg">
+                                
+                                {{-- Círculo que marca la posición en la línea (Desktop) --}}
+                                <div class="hidden md:block absolute top-1/2 w-3 h-3 bg-[#B89871] rounded-full z-10 transform -translate-y-1/2 
+                                            {{ $isLeft ? 'right-1/2 mr-[5px]' : 'left-1/2 ml-[5px]' }}">
+                                </div>
 
-                        <div
-                            class="hidden md:block absolute top-0 {{ $isLeft ? 'right-1/2 mr-3' : 'left-1/2 ml-3' }} w-3 h-3 bg-[#B89871] rounded-full z-10">
-                        </div>
+                                {{-- Diseño móvil (Card alineado a la izquierda con línea) --}}
+                                <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-200 md:hidden"></div>
+                                <div class="absolute left-0 top-3 w-3 h-3 bg-[#B89871] rounded-full z-10 -ml-1.5 md:hidden"></div>
 
-                        <div class="w-full md:w-1/2 {{ $isLeft ? 'md:pr-10' : 'md:pl-10' }} relative">
-
-                            <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-200 md:hidden"></div>
-                            <div class="absolute left-0 top-0 w-3 h-3 bg-[#B89871] rounded-full z-10 -ml-1.5 md:hidden">
-                            </div>
-
-                            <div
-                                class="p-6 border-l-4 md:border-l-0 bg-gray-50 rounded-lg shadow-sm ml-4 md:ml-0 border-[#B89871]">
-                                <h4 class="text-xl font-semibold text-gray-900 mb-2">{{ $item['title'] }}</h4>
-                                <p>{{ $item['text'] }}</p>
+                                <div
+                                    class="p-6 border-l-4 md:border-l-0 bg-gray-50 rounded-lg shadow-sm 
+                                        ml-4 md:ml-0 border-[#B89871] 
+                                        {{ $isLeft ? 'md:text-right' : 'md:text-left' }}">
+                                    <h4 class="text-xl font-semibold text-gray-900 mb-2">{{ $item['title'] }}</h4>
+                                    <p>{{ $item['text'] }}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -132,7 +141,7 @@
 
                 <div
                     class="order-1 md:order-2 bg-gray-100 rounded-tl-2xl rounded-br-2xl shadow-xl overflow-hidden border border-gray-200">
-                    <img src="{{ asset('images/home/4.jpg') }}" alt="Stud Royal."
+                    <img src="{{ asset('images/sobreNosotros/1.jpg') }}" alt="Stud Royal."
                         class="w-full h-80 md:h-[500px] object-cover">
                 </div>
             </div>
@@ -142,8 +151,8 @@
     <section class="py-16 md:py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="order-2 md:order-1 bg-gray-100 rounded-lg shadow-xl overflow-hidden">
-                    <img src="{{ asset('images/home/3.jpg') }}"
+                <div class="order-2 md:order-1 bg-gray-100 rounded-br-2xl rounded-tl-2xl shadow-xl overflow-hidden">
+                    <img src="{{ asset('images/sobreNosotros/2.jpg') }}"
                         alt="Imagen de silla de montar representando filosofía y valores"
                         class="w-full h-80 md:h-[600px] object-cover">
                 </div>
@@ -209,6 +218,15 @@
     </section>
 
     <section id="galeria" class="pt-1 bg-[#f1ece6]/80">
+        <?php
+            $galeria_about = [
+                ['id' => 1, 'url' => 'images/galeria/6.jpg', 'description' => 'Foto A'],
+                ['id' => 2, 'url' => 'images/galeria/7.jpg', 'description' => 'Foto B'],
+                ['id' => 3, 'url' => 'images/galeria/8.jpg', 'description' => 'Foto B'],
+                ['id' => 4, 'url' => 'images/galeria/9.jpg', 'description' => 'Foto B'],
+                ['id' => 5, 'url' => 'images/galeria/10.jpg', 'description' => 'Foto B'],
+            ];
+        ?>
         <div class="max-w-7xl mx-auto px-4 pb-4">
             <h2 class="text-3xl font-bold mb-6 text-[var(--royal-espresso)]"></h2>
             <h2 class="text-3xl font-bold mb-6 text-[var(--royal-espresso)] leading-none">
@@ -220,7 +238,7 @@
             </p>
         </div>
 
-        <livewire:galeria-slider />
+        @livewire('galeria-slider', ['images' => $galeria_about])
     </section>
 
     <section id="cta" class="bg-[var(--royal-espresso)] py-20">
