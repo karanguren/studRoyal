@@ -24,10 +24,9 @@
         </div>
 
         <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium uppercase justify-center sm:justify-end">
-            <a href="#" class="hover:text-[var(--royal-clay)]">INSTAGRAM</a>
-            <a href="#" class="hover:text-[var(--royal-clay)]">YOUTUBE</a>
-            <a href="#" class="hover:text-[var(--royal-clay)]">FACEBOOK</a>
-            <a href="#" class="hover:text-[var(--royal-clay)]">LINKEDIN</a>
+            <a href="https://www.instagram.com/studroyal_" target="_blank" class="hover:text-[var(--royal-clay)]">INSTAGRAM</a>
+            <a href="https://www.tiktok.com/@stud.royal" target="_blank" class="hover:text-[var(--royal-clay)]">TIKTOK</a>
+            <a href="https://x.com/StudRoyal_" target="_blank" class="hover:text-[var(--royal-clay)]">X</a>
         </div>
 
         <hr class="border-[var(--border-soft)]">
