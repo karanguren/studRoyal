@@ -9,7 +9,7 @@
         backgroundUrl="images/home/5.jpg"
     />
     
-    <section class="py-16 md:py-24 bg-gray-50">
+    <section class="py-16 md:py-24 bg-[#f1ece6]/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">

@@ -10,13 +10,13 @@
         backgroundUrl="images/home/5.jpg"
     />
 
-    <section id="contactos" class="py-16 md:py-24 bg-white">
+    <section id="contactos" class="py-16 md:py-16 bg-[#f1ece6]/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             
-            <h2 class="text-xs tracking-widest uppercase font-semibold text-gray-500 mb-2">
+            {{-- <h2 class="text-xs tracking-widest uppercase font-semibold text-gray-500 mb-2">
                 CONTACTO DIRECTO
-            </h2>
-            <p class="max-w-4xl mx-auto text-lg text-gray-600 mb-12 ">
+            </h2> --}}
+            <p class="max-w-4xl mx-auto text-lg text-gray-600 mb-8 ">
                 Nuestro equipo responderá tu solicitud con la discreción, calidad y atención que caracterizan a nuestra casa.
             </p>
 
