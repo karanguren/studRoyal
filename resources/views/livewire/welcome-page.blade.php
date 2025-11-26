@@ -2,7 +2,7 @@
     <header class="w-full h-screen relative overflow-hidden">
         <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": 2000 }'>
             <div class="carousel-cell bg-[url(../../public/images/home/1.jpg)] bg-cover bg-center w-full h-screen">
-                <div class="flex flex-col justify-end lg:justify-center px-8 lg:px-24 h-full pb-16 lg:pb-0">
+                <div class="flex flex-col justify-end lg:justify-center px-8 lg:px-24 h-full pb-8 lg:pb-0">
                     
                     <h2 class="text-5xl lg:text-8xl mb-6 text-[var(--royal-ash)] FortalezaPlain">El linaje de la
                         excelencia ecuestre.
