@@ -147,7 +147,7 @@
     </section>
 
     <section id="galeria" class="pt-10 bg-[#f1ece6]/80">
-        <?php
+        @php
             $galeria_home = [
                 ['id' => 1, 'url' => 'images/galeria/1.jpg', 'description' => 'Foto A'],
                 ['id' => 2, 'url' => 'images/galeria/2.jpg', 'description' => 'Foto B'],
@@ -155,7 +155,7 @@
                 ['id' => 4, 'url' => 'images/galeria/4.jpg', 'description' => 'Foto B'],
                 ['id' => 5, 'url' => 'images/galeria/5.jpg', 'description' => 'Foto B'],
             ];
-        ?>
+        @endphp
         <div class="max-w-7xl mx-auto px-4 pb-4">
             <h2 class="text-3xl font-bold mb-6 text-[var(--royal-espresso)] leading-none">
                 <span class="text-6xl mr-1 FortalezaPlain">U</span>n vistazo a nuestra casa

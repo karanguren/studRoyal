@@ -218,7 +218,7 @@
     </section>
 
     <section id="galeria" class="pt-1 bg-[#f1ece6]/80">
-        <?php
+        @php
             $galeria_about = [
                 ['id' => 1, 'url' => 'images/galeria/6.jpg', 'description' => 'Foto A'],
                 ['id' => 2, 'url' => 'images/galeria/7.jpg', 'description' => 'Foto B'],
@@ -226,7 +226,7 @@
                 ['id' => 4, 'url' => 'images/galeria/9.jpg', 'description' => 'Foto B'],
                 ['id' => 5, 'url' => 'images/galeria/10.jpg', 'description' => 'Foto B'],
             ];
-        ?>
+        @endphp
         <div class="max-w-7xl mx-auto px-4 pb-4">
             <h2 class="text-3xl font-bold mb-6 text-[var(--royal-espresso)]"></h2>
             <h2 class="text-3xl font-bold mb-6 text-[var(--royal-espresso)] leading-none">
