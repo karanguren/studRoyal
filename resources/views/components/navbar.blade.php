@@ -43,12 +43,12 @@
             if (window.scrollY > 10) {
                 navbar.classList.add("blur-bg");
                 navbar.classList.remove("md:hover:backdrop-blur-md");
-                navbar.classList.add("backdrop-blur-md", "bg-white/0"); 
+                navbar.classList.add("backdrop-blur-md", "bg-white/10"); 
                 
             } else {
                 navbar.classList.remove("blur-bg");
                 navbar.classList.add("md:hover:backdrop-blur-md");
-                navbar.classList.remove("backdrop-blur-md"); 
+                navbar.classList.remove("backdrop-blur-md", "bg-white/10"); 
             }
         });
     </script>

@@ -41,7 +41,7 @@
                         Correo electrónico
                     </h3>
                     <p class="text-xl font-medium text-[#3C4220] mb-4">
-                        xxx@studroyalty.com
+                        info@studroyalty.com
                     </p>
                     <p class="text-sm text-gray-600">
                         Para solicitudes formales, alianzas, documentación o información general.
