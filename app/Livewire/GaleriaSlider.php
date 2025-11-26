@@ -12,33 +12,28 @@ class GaleriaSlider extends Component
     public $images = [
         [
             'id' => 1,
-            'url' => 'images/home/1.jpg',
-            'description' => 'Un vibrante árbol de naranjas bajo el sol.',
+            'url' => 'images/galeria/1.jpg',
+            'description' => '1',
         ],
         [
             'id' => 2,
-            'url' => 'images/home/2.jpg',
-            'description' => 'Vista subacuática con efectos de luz.',
+            'url' => 'images/galeria/2.jpg',
+            'description' => '2',
         ],
         [
             'id' => 3,
-            'url' => 'images/home/3.jpg',
-            'description' => 'Vista impresionante desde un mirador alto.',
+            'url' => 'images/galeria/3.jpg',
+            'description' => '3',
         ],
         [
             'id' => 4,
-            'url' => 'images/home/4.jpg',
-            'description' => 'El icónico One World Trade Center de Nueva York.',
+            'url' => 'images/galeria/4.jpg',
+            'description' => '4',
         ],
         [
             'id' => 5,
-            'url' => 'images/home/5.jpg',
-            'description' => 'Gotas de lluvia en una ventana.',
-        ],
-        [
-            'id' => 6,
-            'url' => 'images/home/6.jpg',
-            'description' => 'Primer plano de la nariz de un gato.',
+            'url' => 'images/galeria/5.jpg',
+            'description' => '5',
         ],
     ];
 

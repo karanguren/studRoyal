@@ -4,7 +4,7 @@
             <img 
                 src="{{ $image['url'] }}" 
                 alt="Miniatura {{ $image['id'] }}" 
-                class="carousel-cell-image cursor-pointer w-full h-auto"
+                class="carousel-cell-image cursor-pointer w-full h-auto object-cover {{ $image['id'] == 4 ? 'object-left' : '' }}"
                 wire:click="openModal({{ $image['id'] }})"
             />
         @endforeach
@@ -14,7 +14,7 @@
         <div class="fixed inset-0 z-50 flex items-center justify-center p-4">
             <div class="absolute inset-0 bg-[#3C4220]/50 opacity-80"  wire:click="closeModal" ></div>
 
-            <div class="relative rounded-lg shadow-2xl overflow-hidden z-10 w-[120vw] h-[80vh] md:max-w-6xl md:max-h-[85vh] bg-cover bg-center" style="background-image: url('{{ $selectedImage['url'] ?? '' }}');">
+            <div class="relative rounded-lg shadow-2xl overflow-hidden z-10 w-[120vw] h-[80vh] md:max-w-6xl md:max-h-[85vh] bg-cover bg-center {{ $selectedImage['id'] == 4 ? 'bg-left' : '' }}" style="background-image: url('{{ $selectedImage['url'] ?? '' }}');">
                 
                 <div class="absolute inset-0 bg-black/30"></div>
 
