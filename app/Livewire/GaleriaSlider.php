@@ -29,7 +29,7 @@ class GaleriaSlider extends Component
         $this->showModal = false;
         $this->selectedImage = null; 
     }
-    
+    // 
     public function render()
     {
         return view('livewire.galeria-slider');
