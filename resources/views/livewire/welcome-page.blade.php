@@ -8,7 +8,7 @@
                         excelencia ecuestre.
                     </h2>
                     
-                    <p class="lg:w-1/2 text-white text-xl">Stud Royal es una casa hípica venezolana donde tradición,
+                    <p class="lg:w-1/2 text-white text-xl mb-8 lg:mb-0">Stud Royal es una casa hípica venezolana donde tradición,
                         ciencia y visión se unen para formar ejemplares de alto rendimiento. Desde la genética hasta la
                         pista, elevamos cada etapa del camino ecuestre con precisión, elegancia y propósito.</p>
                 </div>
