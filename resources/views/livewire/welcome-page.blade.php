@@ -2,9 +2,12 @@
     <header class="w-full h-screen relative overflow-hidden">
         <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": 2000 }'>
             <div class="carousel-cell bg-[url(../../public/images/home/1.jpg)] bg-cover bg-center w-full h-screen">
-                <div class="flex flex-col justify-center px-15 lg:px-24 h-full">
+                <div class="flex flex-col justify-end lg:justify-center px-8 lg:px-24 h-full pb-16 lg:pb-0">
+                    
                     <h2 class="text-5xl lg:text-8xl mb-6 text-[var(--royal-ash)] FortalezaPlain">El linaje de la
-                        excelencia ecuestre.</h2>
+                        excelencia ecuestre.
+                    </h2>
+                    
                     <p class="lg:w-1/2 text-white text-xl">Stud Royal es una casa hípica venezolana donde tradición,
                         ciencia y visión se unen para formar ejemplares de alto rendimiento. Desde la genética hasta la
                         pista, elevamos cada etapa del camino ecuestre con precisión, elegancia y propósito.</p>
