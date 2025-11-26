@@ -160,9 +160,9 @@
                         Diseño y desarrollo de piezas estéticas y funcionales: mantas, protectores, bordados, sillas, placas, uniformes y elementos que representan la identidad Royal.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/servicios/1.jpg') }}"
+                        <img src="{{ asset('images/galeria/4.jpg') }}"
                             alt="Equipamiento y uniformes ecuestres"
-                            class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
+                            class="w-full h-48 object-cover object-left rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
 
@@ -175,7 +175,7 @@
                         Acompañamiento experto en compra o evaluación con análisis técnico, genético y funcional que garantiza decisiones estratégicas.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/servicios/2.jpg') }}"
+                        <img src="{{ asset('images/galeria/1.jpg') }}"
                             alt="Asesoría en adquisición de caballos"
                             class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
                     </div>
@@ -191,7 +191,7 @@
                         Manejo de registros, fichas de carrera, historiales médicos, permisos, documentación formal y toda la estructura administrativa del stud.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/servicios/3.jpg') }}"
+                        <img src="{{ asset('images/servicios/7.jpg') }}"
                             alt="Documentación administrativa ecuestre"
                             class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
                     </div>
