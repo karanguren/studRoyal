@@ -30,7 +30,7 @@ class ContactForm extends Component
         $this->validate();
 
         try {
-            Mail::to('katherinearanguren12@gmail.com')->send(new ContactFormMail([
+            Mail::to('info@studroyalty.com')->send(new ContactFormMail([
                 'name' => $this->name,
                 'email' => $this->email,
                 'phone' => $this->phone,
