@@ -14,10 +14,12 @@ class ContactFormMail extends Mailable
     use Queueable, SerializesModels;
 
     public $data;
+    public $logoUrl;
 
     public function __construct(array $data)
     {
         $this->data = $data;
+        $this->logoUrl = asset('images/logo/logo-black.png');
     }
 
     public function envelope(): Envelope

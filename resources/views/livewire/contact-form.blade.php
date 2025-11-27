@@ -75,9 +75,9 @@
                             <div>
                                 <label for="phone"
                                     class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
-                                <input type="text" id="phone" wire:model.blur="phone"
+                                <input type="phone" id="phone" wire:model.blur="phone"
                                     class="w-full px-4 py-2 border @error('phone') border-red-500 @else border-gray-300 @enderror rounded-lg focus:ring-[#3C4220] focus:border-[#3C4220] transition duration-150"
-                                    placeholder="Código país + número">
+                                    placeholder="****-*******">
                                 @error('phone')
                                     <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
                                 @enderror
