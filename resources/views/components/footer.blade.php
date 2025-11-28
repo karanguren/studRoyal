@@ -8,7 +8,7 @@
             </div>
 
             <div class="text-center text-sm space-y-1 sm:text-right">
-                <p class="font-medium">xxx@studroyalty.com | +58 (xxx) xxx-xxxx</p>
+                <p class="font-medium">info@studroyalty.com | +58 (xxx) xxx-xxxx</p>
                 <p class="text-sm">La Rinconada, Caracas – Venezuela</p>
             </div>
         </div>
