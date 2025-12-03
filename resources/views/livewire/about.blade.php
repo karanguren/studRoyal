@@ -3,9 +3,7 @@
         Sobre Nosotros | Stud Royal
     </x-slot:title>
 
-    <x-module-header 
-        title="El linaje de la excelencia ecuestre." 
-    />
+    <x-module-header title="El linaje de la excelencia ecuestre." />
 
 
     <section class="py-16 md:py-24 bg-[#f1ece6]/80">
@@ -25,13 +23,15 @@
     <section id="historia" class="py-16 md:py-24 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl font-bold mb-12 text-[var(--royal-espresso)] leading-none text-center">
-                <span class="text-6xl mr-1 FortalezaPlain">N</span>uestra Historia: La Evolución de una Casa Hípica Moderna
+                <span class="text-6xl mr-1 FortalezaPlain">N</span>uestra Historia: La Evolución de una Casa Hípica
+                Moderna
             </h2>
 
             <div class="space-y-12 text-gray-700 relative">
 
                 {{-- Línea vertical central (Desktop Only) --}}
-                <div class="hidden md:block absolute left-1/2 w-0.5 bg-gray-200 h-full transform -translate-x-1/2"></div>
+                <div class="hidden md:block absolute left-1/2 w-0.5 bg-gray-200 h-full transform -translate-x-1/2">
+                </div>
 
                 @php
                     $historyItems = [
@@ -48,7 +48,7 @@
                         [
                             'title' => 'El nacimiento de Stud Royal',
                             'text' =>
-                            'La marca se formaliza como respuesta a un nuevo momento del hipismo: propietarios que buscan profesionalización, tecnología, genética, rendimiento medible y una estética impecable.',
+                                'La marca se formaliza como respuesta a un nuevo momento del hipismo: propietarios que buscan profesionalización, tecnología, genética, rendimiento medible y una estética impecable.',
                         ],
                         [
                             'title' => 'Innovación aplicada al desempeño',
@@ -69,21 +69,25 @@
                     @endphp
 
                     <div class="flex w-full relative">
-                        
+
                         {{-- Contenedor del Ítem: Controla la posición en desktop. Usamos md:px-12 para crear el espacio --}}
-                        <div class="w-full md:w-1/2 md:px-6 {{ $isLeft ? 'md:mr-auto' : 'md:ml-auto' }} flex {{ $isLeft ? 'md:justify-end' : '' }}">
-                            
+                        <div
+                            class="w-full md:w-1/2 md:px-6 {{ $isLeft ? 'md:mr-auto' : 'md:ml-auto' }} flex {{ $isLeft ? 'md:justify-end' : '' }}">
+
                             {{-- Card del contenido --}}
                             <div class="w-full max-w-lg">
-                                
+
                                 {{-- Círculo que marca la posición en la línea (Desktop) --}}
-                                <div class="hidden md:block absolute top-1/2 w-3 h-3 bg-[#B89871] rounded-full z-10 transform -translate-y-1/2 
+                                <div
+                                    class="hidden md:block absolute top-1/2 w-3 h-3 bg-[#B89871] rounded-full z-10 transform -translate-y-1/2 
                                             {{ $isLeft ? 'right-1/2 mr-[5px]' : 'left-1/2 ml-[5px]' }}">
                                 </div>
 
                                 {{-- Diseño móvil (Card alineado a la izquierda con línea) --}}
                                 <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-200 md:hidden"></div>
-                                <div class="absolute left-0 top-3 w-3 h-3 bg-[#B89871] rounded-full z-10 -ml-1.5 md:hidden"></div>
+                                <div
+                                    class="absolute left-0 top-3 w-3 h-3 bg-[#B89871] rounded-full z-10 -ml-1.5 md:hidden">
+                                </div>
 
                                 <div
                                     class="p-6 border-l-4 md:border-l-0 bg-gray-50 rounded-lg shadow-sm 
@@ -141,7 +145,7 @@
 
                 <div
                     class="order-1 md:order-2 bg-gray-100 rounded-tl-2xl rounded-br-2xl shadow-xl overflow-hidden border border-gray-200">
-                    <img src="{{ asset('images/sobreNosotros/1.jpg') }}" alt="Stud Royal."
+                    <img src="{{ asset('images/sobreNosotros/1.avif') }}" alt="Stud Royal."
                         class="w-full h-80 md:h-[500px] object-cover">
                 </div>
             </div>
@@ -152,7 +156,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="order-2 md:order-1 bg-gray-100 rounded-br-2xl rounded-tl-2xl shadow-xl overflow-hidden">
-                    <img src="{{ asset('images/sobreNosotros/2.jpg') }}"
+                    <img src="{{ asset('images/sobreNosotros/2.avif') }}"
                         alt="Imagen de silla de montar representando filosofía y valores"
                         class="w-full h-80 md:h-[600px] object-cover">
                 </div>
@@ -165,7 +169,8 @@
                     <h4 class="text-xl font-semibold text-[#3C4220] mb-3 pb-1 inline-block">
                         Filosofía</h4>
                     <p class="paragraph mb-8">
-                        En Stud Royal creemos que la <span class="italic">excelencia es una práctica diaria</span>. Nuestro propósito es honrar
+                        En Stud Royal creemos que la <span class="italic">excelencia es una práctica diaria</span>.
+                        Nuestro propósito es honrar
                         el linaje ecuestre con una visión moderna: integrar la tradición del hipismo venezolano con la
                         innovación, la ciencia y el diseño contemporáneo.
                     </p>
@@ -174,7 +179,7 @@
                         Valores</h4>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-700">
                         <div class="flex items-start">
-                            
+
                             <div>
                                 <span class="font-bold block">Nobleza:</span>
                                 <span class="text-sm">Actuamos con integridad y respeto inquebrantable.</span>
@@ -220,11 +225,11 @@
     <section id="galeria" class="pt-1 bg-[#f1ece6]/80">
         @php
             $galeria_about = [
-                ['id' => 1, 'url' => 'images/galeria/6.jpg', 'description' => 'Foto A'],
-                ['id' => 2, 'url' => 'images/galeria/7.jpg', 'description' => 'Foto B'],
-                ['id' => 3, 'url' => 'images/galeria/8.jpg', 'description' => 'Foto B'],
-                ['id' => 4, 'url' => 'images/galeria/9.jpg', 'description' => 'Foto B'],
-                ['id' => 5, 'url' => 'images/galeria/10.jpg', 'description' => 'Foto B'],
+                ['id' => 1, 'url' => 'images/galeria/6.avif', 'description' => 'Foto A'],
+                ['id' => 2, 'url' => 'images/galeria/7.avif', 'description' => 'Foto B'],
+                ['id' => 3, 'url' => 'images/galeria/8.avif', 'description' => 'Foto B'],
+                ['id' => 4, 'url' => 'images/galeria/9.avif', 'description' => 'Foto B'],
+                ['id' => 5, 'url' => 'images/galeria/10.avif', 'description' => 'Foto B'],
             ];
         @endphp
         <div class="max-w-7xl mx-auto px-4 pb-4">

@@ -3,17 +3,18 @@
         <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": 2000 }'>
             <div class="carousel-cell bg-[url(../../public/images/home/1.avif)] bg-cover bg-center w-full h-screen">
                 <div class="flex flex-col justify-end lg:justify-center px-8 lg:px-24 h-full lg:pb-0">
-                    
+
                     <h2 class="text-5xl lg:text-8xl mb-6 text-[var(--royal-ash)] FortalezaPlain">El linaje de la
                         excelencia ecuestre.
                     </h2>
-                    
-                    <p class="lg:w-1/2 text-white text-xl mb-12 lg:mb-0">Stud Royal es una casa hípica venezolana donde tradición,
+
+                    <p class="lg:w-1/2 text-white text-xl mb-12 lg:mb-0">Stud Royal es una casa hípica venezolana donde
+                        tradición,
                         ciencia y visión se unen para formar ejemplares de alto rendimiento. Desde la genética hasta la
                         pista, elevamos cada etapa del camino ecuestre con precisión, elegancia y propósito.</p>
                 </div>
             </div>
-            <div class="carousel-cell bg-[url(../../public/images/home/2.jpg)] bg-cover bg-center w-full h-screen">
+            <div class="carousel-cell bg-[url(../../public/images/home/2.avif)] bg-cover bg-center w-full h-screen">
                 {{-- <div class="flex flex-col justify-center px-15 lg:px-24 h-full">
                     <h2 class="text-5xl lg:text-8xl mb-6 text-[var(--royal-ash)] FortalezaPlain">El linaje de la
                         excelencia ecuestre.</h2>
@@ -22,7 +23,7 @@
                         pista, elevamos cada etapa del camino ecuestre con precisión, elegancia y propósito.</p>
                 </div> --}}
             </div>
-            <div class="carousel-cell bg-[url(../../public/images/home/3.jpg)] bg-cover bg-center w-full h-screen">
+            <div class="carousel-cell bg-[url(../../public/images/home/3.avif)] bg-cover bg-center w-full h-screen">
             </div>
         </div>
     </header>
@@ -47,13 +48,13 @@
         </div>
 
         <div class="grid grid-cols-2 grid-rows-2 gap-4 items-end">
-            <img src="{{ asset('images/home/5.jpg') }}"
-                class="rounded-tl-2xl rounded-br-2xl shadow-lg row-span-2 w-full h-full object-cover mb-8" />
+            <img src="{{ asset('images/home/5.avif') }}"
+                class="rounded-tl-2xl rounded-br-2xl shadow-lg row-span-2 w-full h-full object-cover object-right mb-8" />
 
-            <img src="{{ asset('images/home/6.jpg') }}"
+            <img src="{{ asset('images/home/6.avif') }}"
                 class="rounded-tr-2xl rounded-bl-2xl shadow-lg w-full h-full object-cover " />
 
-            <img src="{{ asset('images/home/4.jpg') }}"
+            <img src="{{ asset('images/home/4.avif') }}"
                 class="rounded-tl-2xl rounded-br-2xl shadow-lg w-full h-full object-cover" />
         </div>
     </section>
@@ -64,7 +65,7 @@
 
                 <div
                     class="order-1 relative shadow-xl overflow-hidden border border-gray-200 h-full rounded-tl-2xl rounded-br-2xl">
-                    <img src="{{ asset('images/home/7.jpg') }}" alt="Stud Royal"
+                    <img src="{{ asset('images/home/7.avif') }}" alt="Stud Royal"
                         class="w-full h-90 md:h-[600px] object-cover rounded-tl-2xl rounded-br-2xl object-top">
 
                     <div class="absolute inset-0 bg-[#3C4220]/10 mix-blend-multiply"></div>
@@ -142,7 +143,7 @@
 
                 <div
                     class="order-1 md:order-2 bg-gray-100 rounded-tl-2xl rounded-br-2xl shadow-xl overflow-hidden border border-gray-200">
-                    <img src="{{ asset('images/home/8.jpg') }}" alt="Stud Royal."
+                    <img src="{{ asset('images/home/8.avif') }}" alt="Stud Royal."
                         class="w-full h-80 md:h-[500px] object-cover">
                 </div>
             </div>
@@ -152,11 +153,11 @@
     <section id="galeria" class="pt-10 bg-[#f1ece6]/80">
         @php
             $galeria_home = [
-                ['id' => 1, 'url' => 'images/galeria/1.jpg', 'description' => 'Foto A'],
-                ['id' => 2, 'url' => 'images/galeria/2.jpg', 'description' => 'Foto B'],
-                ['id' => 3, 'url' => 'images/galeria/3.jpg', 'description' => 'Foto B'],
-                ['id' => 4, 'url' => 'images/galeria/4.jpg', 'description' => 'Foto B'],
-                ['id' => 5, 'url' => 'images/galeria/5.jpg', 'description' => 'Foto B'],
+                ['id' => 1, 'url' => 'images/galeria/1.avif', 'description' => 'Foto A'],
+                ['id' => 2, 'url' => 'images/galeria/2.avif', 'description' => 'Foto B'],
+                ['id' => 3, 'url' => 'images/galeria/3.avif', 'description' => 'Foto B'],
+                ['id' => 4, 'url' => 'images/galeria/4.avif', 'description' => 'Foto B'],
+                ['id' => 5, 'url' => 'images/galeria/5.avif', 'description' => 'Foto B'],
             ];
         @endphp
         <div class="max-w-7xl mx-auto px-4 pb-4">

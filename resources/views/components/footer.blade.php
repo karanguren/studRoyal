@@ -8,7 +8,7 @@
             </div>
 
             <div class="text-center text-sm space-y-1 sm:text-right">
-                <p class="font-medium">info@studroyalty.com | +58 (xxx) xxx-xxxx</p>
+                <p class="font-medium">info@studroyalty.com | +58 (424) 818-1408</p>
                 <p class="text-sm">La Rinconada, Caracas – Venezuela</p>
             </div>
         </div>
@@ -24,8 +24,10 @@
         </div>
 
         <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium uppercase justify-center sm:justify-end">
-            <a href="https://www.instagram.com/studroyal_" target="_blank" class="hover:text-[var(--royal-clay)]">INSTAGRAM</a>
-            <a href="https://www.tiktok.com/@stud.royal" target="_blank" class="hover:text-[var(--royal-clay)]">TIKTOK</a>
+            <a href="https://www.instagram.com/studroyal_" target="_blank"
+                class="hover:text-[var(--royal-clay)]">INSTAGRAM</a>
+            <a href="https://www.tiktok.com/@stud.royal" target="_blank"
+                class="hover:text-[var(--royal-clay)]">TIKTOK</a>
             <a href="https://x.com/StudRoyal_" target="_blank" class="hover:text-[var(--royal-clay)]">X</a>
         </div>
 

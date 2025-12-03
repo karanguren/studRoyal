@@ -110,8 +110,8 @@ select:focus[data-flux-control] {
 
 .carousel-cell-image {
   display: block;
-  height: 400px;
-  width: 601px;
+  /* height: 400px; */
+  /* width: 601px; */
   margin-right: 0px;
 }
 
