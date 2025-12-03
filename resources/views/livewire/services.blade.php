@@ -53,7 +53,7 @@
                     </p>
                     <div class="mt-auto">
                         <img src="{{ asset('images/servicios/1.avif') }}" alt=""
-                            class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
+                            class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
 
@@ -71,7 +71,7 @@
                     </p>
                     <div class="mt-auto">
                         <img src="{{ asset('images/servicios/2.avif') }}" alt=""
-                            class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
+                            class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
 
@@ -87,7 +87,7 @@
                     </p>
                     <div class="mt-auto">
                         <img src="{{ asset('images/servicios/3.avif') }}" alt=""
-                            class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
+                            class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
 
@@ -102,7 +102,7 @@
                     </p>
                     <div class="mt-auto">
                         <img src="{{ asset('images/servicios/4.avif') }}" alt=""
-                            class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
+                            class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
 
@@ -118,7 +118,7 @@
                     </p>
                     <div class="mt-auto">
                         <img src="{{ asset('images/servicios/5.avif') }}" alt=""
-                            class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
+                            class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
 
@@ -134,7 +134,7 @@
                     </p>
                     <div class="mt-auto">
                         <img src="{{ asset('images/servicios/6.avif') }}" alt=""
-                            class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
+                            class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
 
@@ -165,7 +165,7 @@
                     </p>
                     <div class="mt-auto">
                         <img src="{{ asset('images/galeria/4.avif') }}" alt="Equipamiento y uniformes ecuestres"
-                            class="w-full h-48 object-cover object-left rounded-md mt-4 shadow-sm">
+                            class="w-full object-cover object-left rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
 
@@ -181,7 +181,7 @@
                     </p>
                     <div class="mt-auto">
                         <img src="{{ asset('images/galeria/1.avif') }}" alt="Asesoría en adquisición de caballos"
-                            class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
+                            class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
 
@@ -197,7 +197,7 @@
                     </p>
                     <div class="mt-auto">
                         <img src="{{ asset('images/servicios/7.avif') }}" alt="Documentación administrativa ecuestre"
-                            class="w-full h-48 object-cover rounded-md mt-4 shadow-sm">
+                            class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
 
