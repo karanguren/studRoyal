@@ -130,7 +130,7 @@ select:focus[data-flux-control] {
 }
 
 .flickity-button-icon {
-    fill: white;
+    fill: #D6D2C4;
 }
 
 .flickity-page-dots {
@@ -142,11 +142,11 @@ select:focus[data-flux-control] {
     height: 12px;
     opacity: 1;
     background: transparent !important;
-    border: 2px solid white !important;
+    border: 2px solid #D6D2C4 !important;
 }
 
 .flickity-page-dot.is-selected {
-    background: white !important;
+    background: #D6D2C4 !important;
 }
 
 .flickity-page-dot:focus
@@ -198,7 +198,7 @@ select:focus[data-flux-control] {
 }
 
 .title-cta {
-    @apply text-4xl md:text-6xl tracking-tight mb-4 text-[#f1ece6];
+    @apply text-3xl tracking-tight mb-4 text-[#f1ece6];
 }
 
 .paragraph-cta {

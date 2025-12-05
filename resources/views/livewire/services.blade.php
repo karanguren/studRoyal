@@ -209,7 +209,7 @@
     <section id="cta" class="bg-[var(--royal-espresso)] py-20">
         <div class="max-w-6xl mx-auto px-6 md:px-12 text-center">
 
-            <h2 class="title-cta FortalezaPlain">
+            <h2 class="title-cta">
                 Construimos el futuro de cada ejemplar con precisión, visión y linaje.
             </h2>
 

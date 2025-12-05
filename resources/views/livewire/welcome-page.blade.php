@@ -4,7 +4,7 @@
             <div class="carousel-cell bg-[url(../../public/images/home/1.avif)] bg-cover bg-center w-full h-screen">
                 <div class="flex flex-col justify-end lg:justify-center px-8 lg:px-24 h-full lg:pb-0">
 
-                    <h2 class="text-5xl lg:text-8xl mb-6 text-[var(--royal-ash)] FortalezaPlain">El linaje de la
+                    <h2 class="text-5xl mb-6 text-[var(--royal-ash)]">El linaje de la
                         excelencia ecuestre.
                     </h2>
 
@@ -176,7 +176,7 @@
     <section id="cta" class="bg-[var(--royal-espresso)] py-20">
         <div class="max-w-6xl mx-auto px-6 md:px-12 text-center">
 
-            <h2 class="title-cta FortalezaPlain">
+            <h2 class="title-cta">
                 Vive la experiencia Royal
             </h2>
 

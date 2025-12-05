@@ -14,7 +14,7 @@
 
 <header class="relative w-full lg:h-[43vh] h-[55vh] flex items-center justify-center text-center" style="background-image: url('images/home/1.avif'); background-size: cover; background-position: center;">
     <div class="max-w-4xl mx-auto p-4 w-full">
-        <p class="text-3xl text-white absolute bottom-4 left-1/3 -translate-x-1/4 lg:static lg:translate-x-0 lg:bottom-auto">
+        <p class="text-4xl text-white absolute bottom-4 left-1/3 -translate-x-1/4 lg:static lg:translate-x-0 lg:bottom-auto">
             {{ $title }}
         </p>
     </div>

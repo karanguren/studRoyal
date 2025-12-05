@@ -3,7 +3,7 @@
         Sobre Nosotros | Stud Royal
     </x-slot:title>
 
-    <x-module-header title="El linaje de la excelencia ecuestre." />
+    <x-module-header title="El linaje de la excelencia ecuestre" />
 
 
     <section class="py-16 md:py-24 bg-[#f1ece6]/80">
@@ -27,9 +27,8 @@
                 Moderna
             </h2>
 
-            <div class="space-y-12 text-gray-700 relative">
+            <div class="space-y-12 text-gray-700 relative hidden md:block">
 
-                {{-- Línea vertical central (Desktop Only) --}}
                 <div class="hidden md:block absolute left-1/2 w-0.5 bg-gray-200 h-full transform -translate-x-1/2">
                 </div>
 
@@ -65,25 +64,21 @@
 
                 @foreach ($historyItems as $index => $item)
                     @php
-                        $isLeft = $index % 2 == 0; // True para 0, 2, 4 (Izquierda) | False para 1, 3 (Derecha)
+                        $isLeft = $index % 2 == 0; 
                     @endphp
 
                     <div class="flex w-full relative">
 
-                        {{-- Contenedor del Ítem: Controla la posición en desktop. Usamos md:px-12 para crear el espacio --}}
                         <div
                             class="w-full md:w-1/2 md:px-6 {{ $isLeft ? 'md:mr-auto' : 'md:ml-auto' }} flex {{ $isLeft ? 'md:justify-end' : '' }}">
 
-                            {{-- Card del contenido --}}
                             <div class="w-full max-w-lg">
 
-                                {{-- Círculo que marca la posición en la línea (Desktop) --}}
                                 <div
                                     class="hidden md:block absolute top-1/2 w-3 h-3 bg-[#B89871] rounded-full z-10 transform -translate-y-1/2 
-                                            {{ $isLeft ? 'right-1/2 mr-[5px]' : 'left-1/2 ml-[5px]' }}">
+                                    {{ $isLeft ? 'right-1/2 mr-[5px]' : 'left-1/2 ml-[5px]' }}">
                                 </div>
 
-                                {{-- Diseño móvil (Card alineado a la izquierda con línea) --}}
                                 <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-200 md:hidden"></div>
                                 <div
                                     class="absolute left-0 top-3 w-3 h-3 bg-[#B89871] rounded-full z-10 -ml-1.5 md:hidden">
@@ -92,7 +87,7 @@
                                 <div
                                     class="p-6 border-l-4 md:border-l-0 bg-gray-50 rounded-lg shadow-sm 
                                         ml-4 md:ml-0 border-[#B89871] 
-                                        {{ $isLeft ? 'md:text-right' : 'md:text-left' }}">
+                                    {{ $isLeft ? 'md:text-right' : 'md:text-left' }}">
                                     <h4 class="text-xl font-semibold text-gray-900 mb-2">{{ $item['title'] }}</h4>
                                     <p>{{ $item['text'] }}</p>
                                 </div>
@@ -101,7 +96,25 @@
                     </div>
                 @endforeach
             </div>
+
+            <div class="md:hidden">
+                <div class="carousel-galeria" wire:ignore data-flickity='{ "wrapAround": false, "autoPlay": 3000 }'>
+                    @foreach ($historyItems as $index => $item)
+                        <div class="carousel-cell-image w-80">
+                            <div
+                                class="p-6 bg-[#f1ece6]/50 rounded-lg shadow-sm 
+                                    ml-4 mr-4 md:ml-0 md:mr-0
+                                    min-h-80" 
+                                >
+                                <h4 class="text-xl font-semibold mb-2">{{ $item['title'] }}</h4>
+                                <p>{{ $item['text'] }}</p>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
         </div>
+
     </section>
 
     <section id="beneficios" class="py-16 md:py-24 bg-[#f1ece6]/80">
@@ -181,37 +194,38 @@
                         <div class="flex items-start">
 
                             <div>
-                                <span class="font-bold block">Nobleza:</span>
+                                
+                                <span class="font-bold block"><span class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Nobleza:</span>
                                 <span class="text-sm">Actuamos con integridad y respeto inquebrantable.</span>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div>
-                                <span class="font-bold block">Precisión:</span>
+                                <span class="font-bold block"><span class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Precisión:</span>
                                 <span class="text-sm">Decisiones basadas en datos rigurosos y ciencia aplicada.</span>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div>
-                                <span class="font-bold block">Tradición:</span>
+                                <span class="font-bold block"><span class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Tradición:</span>
                                 <span class="text-sm">Honramos la rica historia y herencia del hipismo.</span>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div>
-                                <span class="font-bold block">Innovación:</span>
+                                <span class="font-bold block"><span class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Innovación:</span>
                                 <span class="text-sm">Tecnología y genética al servicio del máximo rendimiento.</span>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div>
-                                <span class="font-bold block">Elegancia:</span>
+                                <span class="font-bold block"><span class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Elegancia:</span>
                                 <span class="text-sm">Una estética impecable en cada detalle y presentación.</span>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div>
-                                <span class="font-bold block">Visión de Futuro:</span>
+                                <span class="font-bold block"><span class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Visión de Futuro:</span>
                                 <span class="text-sm">Una casa que evoluciona, invirtiendo en el mañana del
                                     deporte.</span>
                             </div>
@@ -249,7 +263,7 @@
     <section id="cta" class="bg-[var(--royal-espresso)] py-20">
         <div class="max-w-6xl mx-auto px-6 md:px-12 text-center">
 
-            <h2 class="title-cta FortalezaPlain">
+            <h2 class="title-cta">
                 Agenda tu visita a Stud Royal
             </h2>
 
