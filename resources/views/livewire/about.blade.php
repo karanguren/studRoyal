@@ -20,7 +20,7 @@
         </div>
     </section>
 
-    <section id="historia" class="py-16 md:py-24 px-4 bg-white">
+    <section id="historia" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl font-bold mb-12 text-[var(--royal-espresso)] leading-none text-center">
                 <span class="text-6xl mr-1 FortalezaPlain">N</span>uestra Historia: La Evolución de una Casa Hípica
@@ -64,7 +64,7 @@
 
                 @foreach ($historyItems as $index => $item)
                     @php
-                        $isLeft = $index % 2 == 0; 
+                        $isLeft = $index % 2 == 0;
                     @endphp
 
                     <div class="flex w-full relative">
@@ -85,9 +85,7 @@
                                 </div>
 
                                 <div
-                                    class="p-6 border-l-4 md:border-l-0 bg-gray-50 rounded-lg shadow-sm 
-                                        ml-4 md:ml-0 border-[#B89871] 
-                                    {{ $isLeft ? 'md:text-right' : 'md:text-left' }}">
+                                    class="p-6 border-l-4 md:border-l-0 bg-gray-50 rounded-lg shadow-sm ml-4 md:ml-0 border-[#B89871] {{ $isLeft ? 'md:text-right' : 'md:text-left' }}">
                                     <h4 class="text-xl font-semibold text-gray-900 mb-2">{{ $item['title'] }}</h4>
                                     <p>{{ $item['text'] }}</p>
                                 </div>
@@ -97,15 +95,11 @@
                 @endforeach
             </div>
 
-            <div class="md:hidden">
-                <div class="carousel-galeria" wire:ignore data-flickity='{ "wrapAround": false, "autoPlay": 3000 }'>
+            <div class="md:hidden w-full">
+                <div wire:ignore data-flickity='{ "wrapAround": false, "autoPlay": 3000 }'>
                     @foreach ($historyItems as $index => $item)
                         <div class="carousel-cell-image w-80">
-                            <div
-                                class="p-6 bg-[#f1ece6]/50 rounded-lg shadow-sm 
-                                    ml-4 mr-4 md:ml-0 md:mr-0
-                                    min-h-80" 
-                                >
+                            <div class="p-6 bg-[#f1ece6]/50 rounded-lg shadow-sm ml-4 mr-4 md:ml-0 md:mr-0 min-h-80">
                                 <h4 class="text-xl font-semibold mb-2">{{ $item['title'] }}</h4>
                                 <p>{{ $item['text'] }}</p>
                             </div>
@@ -194,38 +188,45 @@
                         <div class="flex items-start">
 
                             <div>
-                                
-                                <span class="font-bold block"><span class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Nobleza:</span>
+
+                                <span class="font-bold block"><span
+                                        class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Nobleza:</span>
                                 <span class="text-sm">Actuamos con integridad y respeto inquebrantable.</span>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div>
-                                <span class="font-bold block"><span class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Precisión:</span>
+                                <span class="font-bold block"><span
+                                        class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Precisión:</span>
                                 <span class="text-sm">Decisiones basadas en datos rigurosos y ciencia aplicada.</span>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div>
-                                <span class="font-bold block"><span class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Tradición:</span>
+                                <span class="font-bold block"><span
+                                        class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Tradición:</span>
                                 <span class="text-sm">Honramos la rica historia y herencia del hipismo.</span>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div>
-                                <span class="font-bold block"><span class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Innovación:</span>
+                                <span class="font-bold block"><span
+                                        class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Innovación:</span>
                                 <span class="text-sm">Tecnología y genética al servicio del máximo rendimiento.</span>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div>
-                                <span class="font-bold block"><span class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Elegancia:</span>
+                                <span class="font-bold block"><span
+                                        class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Elegancia:</span>
                                 <span class="text-sm">Una estética impecable en cada detalle y presentación.</span>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div>
-                                <span class="font-bold block"><span class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Visión de Futuro:</span>
+                                <span class="font-bold block"><span
+                                        class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Visión de
+                                    Futuro:</span>
                                 <span class="text-sm">Una casa que evoluciona, invirtiendo en el mañana del
                                     deporte.</span>
                             </div>
@@ -239,11 +240,11 @@
     <section id="galeria" class="pt-1 bg-[#f1ece6]/80">
         @php
             $galeria_about = [
-                ['id' => 1, 'url' => 'images/galeria/6.avif', 'description' => 'Foto A'],
-                ['id' => 2, 'url' => 'images/galeria/7.avif', 'description' => 'Foto B'],
-                ['id' => 3, 'url' => 'images/galeria/8.avif', 'description' => 'Foto B'],
-                ['id' => 4, 'url' => 'images/galeria/9.avif', 'description' => 'Foto B'],
-                ['id' => 5, 'url' => 'images/galeria/10.avif', 'description' => 'Foto B'],
+                ['id' => 6, 'url' => 'images/galeria/6.avif', 'description' => 'Foto A'],
+                ['id' => 7, 'url' => 'images/galeria/7.avif', 'description' => 'Foto B'],
+                ['id' => 8, 'url' => 'images/galeria/8.avif', 'description' => 'Foto B'],
+                ['id' => 9, 'url' => 'images/galeria/9.avif', 'description' => 'Foto B'],
+                ['id' => 10, 'url' => 'images/galeria/10.avif', 'description' => 'Foto B'],
             ];
         @endphp
         <div class="max-w-7xl mx-auto px-4 pb-4">

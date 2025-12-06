@@ -110,8 +110,6 @@ select:focus[data-flux-control] {
 
 .carousel-cell-image {
   display: block;
-  /* height: 400px; */
-  /* width: 601px; */
   margin-right: 0px;
 }
 
@@ -120,6 +118,13 @@ select:focus[data-flux-control] {
     height: 100vh;
     margin-right: 0px;
 }
+
+.carousel-cel {
+  width: 80%;
+  height: 450px;
+  margin-right: 10px;
+}
+
 
 .flickity-button:hover {
     background: transparent;
