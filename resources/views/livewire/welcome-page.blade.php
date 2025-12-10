@@ -42,7 +42,7 @@
             </p>
             <div class="flex justify-center  lg:justify-start">
                 <a href="{{ route('about') }}" class="lg:w-1/3 w-1/2 btn-3C4220 mt-8 mb-4">
-                    ver mas
+                    ver más
                 </a>
             </div>
         </div>

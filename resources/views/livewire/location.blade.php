@@ -3,7 +3,7 @@
         Ubícanos | Stud Royal
     </x-slot:title>
 
-    <x-module-header title="Donde Encontrarnos" description="Dos espacios para vivir la experiencia Stud Royal"
+    <x-module-header title="Donde Encontrarnos" description="El espacio para vivir la experiencia Stud Royal"
         backgroundUrl="images/home/5.avif" />
 
     <section class="py-16 md:py-24 bg-[#f1ece6]/80">
