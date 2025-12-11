@@ -18,6 +18,13 @@
                 </p>
             </div>
         </div>
+
+    </section>
+
+    <section class="flex items-center justify-center">
+        <a href="{{ asset('docs/FichatecnicaTheDuke.pdf') }}" target="_blank" class="btn-3C4220 mt-8">
+            Ficha técnica The Duke
+        </a>
     </section>
 
     <section id="historia" class="py-16 md:py-24 bg-white">
@@ -188,9 +195,11 @@
                         <div class="flex items-start">
                             <div>
                                 <span class="font-bold block">
-                                    <span class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="#B89871">
-                                            <path d="M8 1L14 8 8 15 2 8z"/>
+                                    <span
+                                        class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 16 16" fill="#B89871">
+                                            <path d="M8 1L14 8 8 15 2 8z" />
                                         </svg>
                                     </span>
                                     Nobleza:
@@ -201,9 +210,11 @@
                         <div class="flex items-start">
                             <div>
                                 <span class="font-bold block">
-                                    <span class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="#B89871">
-                                            <path d="M8 1L14 8 8 15 2 8z"/>
+                                    <span
+                                        class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 16 16" fill="#B89871">
+                                            <path d="M8 1L14 8 8 15 2 8z" />
                                         </svg>
                                     </span>
                                     Precisión:
@@ -214,9 +225,11 @@
                         <div class="flex items-start">
                             <div>
                                 <span class="font-bold block">
-                                    <span class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="#B89871">
-                                            <path d="M8 1L14 8 8 15 2 8z"/>
+                                    <span
+                                        class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 16 16" fill="#B89871">
+                                            <path d="M8 1L14 8 8 15 2 8z" />
                                         </svg>
                                     </span>
                                     Tradición:
@@ -227,9 +240,11 @@
                         <div class="flex items-start">
                             <div>
                                 <span class="font-bold block">
-                                    <span class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="#B89871">
-                                            <path d="M8 1L14 8 8 15 2 8z"/>
+                                    <span
+                                        class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 16 16" fill="#B89871">
+                                            <path d="M8 1L14 8 8 15 2 8z" />
                                         </svg>
                                     </span>
                                     Innovación:
@@ -240,9 +255,11 @@
                         <div class="flex items-start">
                             <div>
                                 <span class="font-bold block">
-                                    <span class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="#B89871">
-                                            <path d="M8 1L14 8 8 15 2 8z"/>
+                                    <span
+                                        class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 16 16" fill="#B89871">
+                                            <path d="M8 1L14 8 8 15 2 8z" />
                                         </svg>
                                     </span>
                                     Elegancia:
@@ -253,9 +270,11 @@
                         <div class="flex items-start">
                             <div>
                                 <span class="font-bold block">
-                                    <span class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="#B89871">
-                                            <path d="M8 1L14 8 8 15 2 8z"/>
+                                    <span
+                                        class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 16 16" fill="#B89871">
+                                            <path d="M8 1L14 8 8 15 2 8z" />
                                         </svg>
                                     </span>
                                     Visión de Futuro:
