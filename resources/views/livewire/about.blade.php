@@ -186,47 +186,80 @@
                         Valores</h4>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-700">
                         <div class="flex items-start">
-
                             <div>
-
-                                <span class="font-bold block"><span
-                                        class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Nobleza:</span>
+                                <span class="font-bold block">
+                                    <span class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="#B89871">
+                                            <path d="M8 1L14 8 8 15 2 8z"/>
+                                        </svg>
+                                    </span>
+                                    Nobleza:
+                                </span>
                                 <span class="text-sm">Actuamos con integridad y respeto inquebrantable.</span>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div>
-                                <span class="font-bold block"><span
-                                        class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Precisión:</span>
+                                <span class="font-bold block">
+                                    <span class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="#B89871">
+                                            <path d="M8 1L14 8 8 15 2 8z"/>
+                                        </svg>
+                                    </span>
+                                    Precisión:
+                                </span>
                                 <span class="text-sm">Decisiones basadas en datos rigurosos y ciencia aplicada.</span>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div>
-                                <span class="font-bold block"><span
-                                        class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Tradición:</span>
+                                <span class="font-bold block">
+                                    <span class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="#B89871">
+                                            <path d="M8 1L14 8 8 15 2 8z"/>
+                                        </svg>
+                                    </span>
+                                    Tradición:
+                                </span>
                                 <span class="text-sm">Honramos la rica historia y herencia del hipismo.</span>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div>
-                                <span class="font-bold block"><span
-                                        class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Innovación:</span>
+                                <span class="font-bold block">
+                                    <span class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="#B89871">
+                                            <path d="M8 1L14 8 8 15 2 8z"/>
+                                        </svg>
+                                    </span>
+                                    Innovación:
+                                </span>
                                 <span class="text-sm">Tecnología y genética al servicio del máximo rendimiento.</span>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div>
-                                <span class="font-bold block"><span
-                                        class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Elegancia:</span>
+                                <span class="font-bold block">
+                                    <span class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="#B89871">
+                                            <path d="M8 1L14 8 8 15 2 8z"/>
+                                        </svg>
+                                    </span>
+                                    Elegancia:
+                                </span>
                                 <span class="text-sm">Una estética impecable en cada detalle y presentación.</span>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div>
-                                <span class="font-bold block"><span
-                                        class="text-[#B89871] text-xl mr-2 leading-none select-none">♦</span>Visión de
-                                    Futuro:</span>
+                                <span class="font-bold block">
+                                    <span class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="#B89871">
+                                            <path d="M8 1L14 8 8 15 2 8z"/>
+                                        </svg>
+                                    </span>
+                                    Visión de Futuro:
+                                </span>
                                 <span class="text-sm">Una casa que evoluciona, invirtiendo en el mañana del
                                     deporte.</span>
                             </div>
