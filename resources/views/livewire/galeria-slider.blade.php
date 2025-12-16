@@ -13,8 +13,8 @@
 
             <div class="relative rounded-lg shadow-2xl overflow-hidden z-10 p-0 max-w-[90vw] max-h-[90vh]">
 
-                <img src="{{ asset('images/galeria/' . $selectedImage['id'] . '.1.avif') }}" alt="Imagen de Galería"
-                    class="block w-auto h-auto max-w-[90vw] max-h-[90vh] rounded-lg">
+                <img loading="lazy" src="{{ asset('images/galeria/' . $selectedImage['id'] . '.1.avif') }}"
+                    alt="Imagen de Galería" class="block w-auto h-auto max-w-[90vw] max-h-[90vh] rounded-lg">
 
                 <div class="absolute inset-0 bg-black/30 pointer-events-none"></div>
 

@@ -159,7 +159,7 @@
 
                 <div
                     class="order-1 md:order-2 bg-gray-100 rounded-tl-2xl rounded-br-2xl shadow-xl overflow-hidden border border-gray-200">
-                    <img src="{{ asset('images/sobreNosotros/1.avif') }}" alt="Stud Royal."
+                    <img loading="lazy" src="{{ asset('images/sobreNosotros/1.avif') }}" alt="Stud Royal."
                         class="w-full h-80 md:h-[500px] object-cover">
                 </div>
             </div>
@@ -170,7 +170,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="order-2 md:order-1 bg-gray-100 rounded-br-2xl rounded-tl-2xl shadow-xl overflow-hidden">
-                    <img src="{{ asset('images/sobreNosotros/2.avif') }}"
+                    <img loading="lazy" src="{{ asset('images/sobreNosotros/2.avif') }}"
                         alt="Imagen de silla de montar representando filosofía y valores"
                         class="w-full h-80 md:h-[600px] object-cover">
                 </div>

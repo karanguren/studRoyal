@@ -48,13 +48,13 @@
         </div>
 
         <div class="grid grid-cols-2 grid-rows-2 gap-4 items-end">
-            <img src="{{ asset('images/home/5.avif') }}"
+            <img loading="lazy" src="{{ asset('images/home/5.avif') }}"
                 class="rounded-tl-2xl rounded-br-2xl shadow-lg row-span-2 w-full h-full object-cover object-right mb-8" />
 
-            <img src="{{ asset('images/home/6.avif') }}"
+            <img loading="lazy" src="{{ asset('images/home/6.avif') }}"
                 class="rounded-tr-2xl rounded-bl-2xl shadow-lg w-full h-full object-cover " />
 
-            <img src="{{ asset('images/home/4.avif') }}"
+            <img loading="lazy" src="{{ asset('images/home/4.avif') }}"
                 class="rounded-tl-2xl rounded-br-2xl shadow-lg w-full h-full object-cover" />
         </div>
     </section>
@@ -65,7 +65,7 @@
 
                 <div
                     class="order-1 relative shadow-xl overflow-hidden border border-gray-200 h-full rounded-tl-2xl rounded-br-2xl">
-                    <img src="{{ asset('images/home/7.avif') }}" alt="Stud Royal"
+                    <img loading="lazy" src="{{ asset('images/home/7.avif') }}" alt="Stud Royal"
                         class="w-full h-90 md:h-[600px] object-cover rounded-tl-2xl rounded-br-2xl object-top">
 
                     <div class="absolute inset-0 bg-[#3C4220]/10 mix-blend-multiply"></div>
@@ -143,7 +143,7 @@
 
                 <div
                     class="order-1 md:order-2 bg-gray-100 rounded-tl-2xl rounded-br-2xl shadow-xl overflow-hidden border border-gray-200">
-                    <img src="{{ asset('images/home/8.avif') }}" alt="Stud Royal."
+                    <img loading="lazy" src="{{ asset('images/home/8.avif') }}" alt="Stud Royal."
                         class="w-full h-80 md:h-[500px] object-cover">
                 </div>
             </div>

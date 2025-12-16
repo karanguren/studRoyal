@@ -3,10 +3,10 @@
         class="fixed top-0 left-0 w-full z-50 transition-all duration-300 
                bg-transparent 
                backdrop-blur-md bg-white/10 md:backdrop-blur-none md:bg-transparent
-               md:hover:backdrop-blur-md md:hover:bg-white/10"> 
-        
+               md:hover:backdrop-blur-md md:hover:bg-white/10">
+
         <div class="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between md:justify-center relative">
-            
+
             <ul class="hidden md:flex space-x-6 font-medium order-1 md:mr-12">
                 <li><a href="{{ route('about') }}"
                         class="text-[#C8AF77] text-shadow-lg hover:text-[var(--royal-mist)] uppercase">Sobre
@@ -17,7 +17,7 @@
             </ul>
 
             <a href="{{ route('home') }}" class="block order-2">
-                <img src="{{ asset('images/logo/logo-gold.png') }}" alt="Stud Royal Logo"
+                <img loading="lazy" src="{{ asset('images/logo/logo-gold.png') }}" alt="Stud Royal Logo"
                     class="h-20 w-auto" />
             </a>
 
@@ -30,13 +30,13 @@
                 </li>
             </ul>
 
-            <button id="menuBtn" class="md:hidden block text-2xl order-3 absolute right-4 text-[#C8AF77] text-shadow-lg">
+            <button id="menuBtn"
+                class="md:hidden block text-2xl order-3 absolute right-4 text-[#C8AF77] text-shadow-lg">
                 ☰
             </button>
         </div>
 
-        <ul id="mobileMenu"
-            class="md:hidden hidden flex-col space-y-4 mt-4 p-4 rounded-lg font-medium">
+        <ul id="mobileMenu" class="md:hidden hidden flex-col space-y-4 mt-4 p-4 rounded-lg font-medium">
             <li><a class="text-[#C8AF77] text-shadow-lg uppercase" href="{{ route('about') }}">Sobre nosotros</a></li>
             <li><a class="text-[#C8AF77] text-shadow-lg uppercase" href="{{ route('services') }}">Servicios</a></li>
             <li><a class="text-[#C8AF77] text-shadow-lg uppercase" href="{{ route('contact') }}">Contacto</a></li>
@@ -46,7 +46,7 @@
 
     <script>
         const navbar = document.getElementById("navbar");
-        
+
         document.getElementById('menuBtn').addEventListener('click', () => {
             const menu = document.getElementById('mobileMenu');
             menu.classList.toggle('hidden');
@@ -56,7 +56,7 @@
         const SCROLL_CLASSES = ["backdrop-blur-md", "bg-white/10"];
 
         const TOP_CLASSES = ["md:hover:backdrop-blur-md", "md:hover:bg-white/10"];
-        
+
         const MD_NO_BLUR = ["md:backdrop-blur-none", "md:bg-transparent"];
 
 
@@ -82,7 +82,7 @@
                 MD_NO_BLUR.forEach(cls => navbar.classList.add(cls));
             }
         });
-        
+
         // Ejecutar la función de scroll una vez para asegurar el estado inicial TOP en desktop
         window.dispatchEvent(new Event('scroll'));
     </script>

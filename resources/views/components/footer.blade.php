@@ -4,7 +4,8 @@
         <div class="flex flex-col items-center gap-6 sm:flex-row sm:justify-between sm:items-start">
 
             <div class="h-32 w-auto">
-                <img src="{{ asset('images/logo/logo-black.png') }}" alt="Stud Royal Logo" class="h-full w-auto mx-auto" />
+                <img loading="lazy" src="{{ asset('images/logo/logo-black.png') }}" alt="Stud Royal Logo"
+                    class="h-full w-auto mx-auto" />
             </div>
 
             <div class="text-center text-sm space-y-1 sm:text-right">

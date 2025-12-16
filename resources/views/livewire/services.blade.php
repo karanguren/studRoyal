@@ -42,7 +42,8 @@
                         proyectar atributos como velocidad, resistencia y temperamento.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/servicios/1.avif') }}" alt="Imagen de Cría y Selección Genética"
+                        <img loading="lazy" src="{{ asset('images/servicios/1.avif') }}"
+                            alt="Imagen de Cría y Selección Genética"
                             class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
@@ -57,7 +58,7 @@
                         comprometer su bienestar.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/servicios/2.avif') }}"
+                        <img loading="lazy" src="{{ asset('images/servicios/2.avif') }}"
                             alt="Imagen de Entrenamiento de Alto Rendimiento"
                             class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
@@ -73,7 +74,7 @@
                         comportamiento y entorno.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/servicios/3.avif') }}"
+                        <img loading="lazy" src="{{ asset('images/servicios/3.avif') }}"
                             alt="Imagen de Manejo, Cuidado y Bienestar Integral"
                             class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
@@ -88,7 +89,8 @@
                         especializados y planes preventivos que aseguran la longevidad y salud óptima del ejemplar.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/servicios/4.avif') }}" alt="Imagen de Veterinaria Especializada"
+                        <img loading="lazy" src="{{ asset('images/servicios/4.avif') }}"
+                            alt="Imagen de Veterinaria Especializada"
                             class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
@@ -103,7 +105,7 @@
                         potencial reproductivo, valorización y proyección del ejemplar.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/servicios/5.avif') }}"
+                        <img loading="lazy" src="{{ asset('images/servicios/5.avif') }}"
                             alt="Imagen de Gestión Estratégica del Potencial del Caballo"
                             class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
@@ -119,7 +121,7 @@
                         protocolos de pre-pista, paddock y estrategias de presentación.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/servicios/6.avif') }}"
+                        <img loading="lazy" src="{{ asset('images/servicios/6.avif') }}"
                             alt="Imagen de Preparación y Presentación en Competencias"
                             class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
@@ -131,7 +133,8 @@
             <div class="sm:hidden">
                 <div wire:ignore data-flickity='{ "wrapAround": false, "autoPlay": 3000 }' class="">
                     <div class="carousel-cel">
-                        <div class="bg-[#f1ece6]/80 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col h-9/10">
+                        <div
+                            class="bg-[#f1ece6]/80 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col h-9/10">
                             <h4 class="text-xl font-semibold text-gray-900 mb-3">DesCría y Selección Genética</h4>
                             <p class="text-gray-600 text-sm mb-4 flex-grow">
                                 Estudiamos el linaje, la morfología y la genética de cada ejemplar para asegurar crías
@@ -141,7 +144,7 @@
                                 proyectar atributos como velocidad, resistencia y temperamento.
                             </p>
                             <div class="mt-auto">
-                                <img src="{{ asset('images/servicios/1.avif') }}"
+                                <img loading="lazy" src="{{ asset('images/servicios/1.avif') }}"
                                     alt="Imagen de Cría y Selección Genética"
                                     class="w-full object-cover rounded-md mt-4 shadow-sm">
                             </div>
@@ -159,7 +162,7 @@
                                 comprometer su bienestar.
                             </p>
                             <div class="mt-auto">
-                                <img src="{{ asset('images/servicios/2.avif') }}"
+                                <img loading="lazy" src="{{ asset('images/servicios/2.avif') }}"
                                     alt="Imagen de Entrenamiento de Alto Rendimiento"
                                     class="w-full object-cover rounded-md mt-4 shadow-sm">
                             </div>
@@ -176,14 +179,15 @@
                                 comportamiento y entorno.
                             </p>
                             <div class="mt-auto">
-                                <img src="{{ asset('images/servicios/3.avif') }}"
+                                <img loading="lazy" src="{{ asset('images/servicios/3.avif') }}"
                                     alt="Imagen de Manejo, Cuidado y Bienestar Integral"
                                     class="w-full object-cover rounded-md mt-4 shadow-sm">
                             </div>
                         </div>
                     </div>
                     <div class="carousel-cel">
-                        <div class="bg-[#f1ece6]/80 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col h-9/10">
+                        <div
+                            class="bg-[#f1ece6]/80 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col h-9/10">
                             <h4 class="text-xl font-semibold text-gray-900 mb-3">Veterinaria Especializada</h4>
                             <p class="text-gray-600 text-sm mb-4 flex-grow">
                                 Supervisión veterinaria permanente, terapias regenerativas, monitoreos digitales,
@@ -192,7 +196,7 @@
                                 ejemplar.
                             </p>
                             <div class="mt-auto">
-                                <img src="{{ asset('images/servicios/4.avif') }}"
+                                <img loading="lazy" src="{{ asset('images/servicios/4.avif') }}"
                                     alt="Imagen de Veterinaria Especializada"
                                     class="w-full object-cover rounded-md mt-4 shadow-sm">
                             </div>
@@ -210,7 +214,7 @@
                                 potencial reproductivo, valorización y proyección del ejemplar.
                             </p>
                             <div class="mt-auto">
-                                <img src="{{ asset('images/servicios/5.avif') }}"
+                                <img loading="lazy" src="{{ asset('images/servicios/5.avif') }}"
                                     alt="Imagen de Gestión Estratégica del Potencial del Caballo"
                                     class="w-full object-cover rounded-md mt-4 shadow-sm">
                             </div>
@@ -227,7 +231,7 @@
                                 protocolos de pre-pista, paddock y estrategias de presentación.
                             </p>
                             <div class="mt-auto">
-                                <img src="{{ asset('images/servicios/6.avif') }}"
+                                <img loading="lazy" src="{{ asset('images/servicios/6.avif') }}"
                                     alt="Imagen de Preparación y Presentación en Competencias"
                                     class="w-full object-cover rounded-md mt-4 shadow-sm">
                             </div>
@@ -261,7 +265,8 @@
                         placas, uniformes y elementos que representan la identidad Royal.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/galeria/4.avif') }}" alt="Equipamiento y uniformes ecuestres"
+                        <img loading="lazy" src="{{ asset('images/galeria/4.avif') }}"
+                            alt="Equipamiento y uniformes ecuestres"
                             class="w-full object-cover object-left rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
@@ -277,7 +282,8 @@
                         garantiza decisiones estratégicas.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/galeria/1.avif') }}" alt="Asesoría en adquisición de caballos"
+                        <img loading="lazy" src="{{ asset('images/galeria/1.avif') }}"
+                            alt="Asesoría en adquisición de caballos"
                             class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
@@ -293,7 +299,8 @@
                         toda la estructura administrativa del stud.
                     </p>
                     <div class="mt-auto">
-                        <img src="{{ asset('images/servicios/7.avif') }}" alt="Documentación administrativa ecuestre"
+                        <img loading="lazy" src="{{ asset('images/servicios/7.avif') }}"
+                            alt="Documentación administrativa ecuestre"
                             class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
