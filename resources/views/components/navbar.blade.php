@@ -7,7 +7,7 @@
 
         <div class="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between relative h-24">
 
-            <ul class="hidden md:flex space-x-6 font-medium items-center justify-end flex-1 pr-[64px]" style="padding-right: 64px">
+            <ul class="hidden md:flex space-x-6 font-medium items-center justify-end flex-1 pr-[64px]" style="padding-right: 32px">
                 <li><a href="{{ route('about') }}"
                         class="text-[#C8AF77] text-shadow-lg hover:text-[var(--royal-mist)] uppercase">{{ __('site.nav.about') }}</a>
                 </li>
@@ -22,7 +22,7 @@
                     class="h-20 w-auto" />
             </a>
 
-            <div class="hidden md:flex items-center flex-1 pl-[64px]">
+            <div class="hidden md:flex items-center flex-1 pl-[64px]" style="padding-left: 32px">
                 <ul class="flex space-x-6 font-medium">
                     <li><a href="{{ route('contact') }}"
                             class="text-[#C8AF77] text-shadow-lg hover:text-[var(--royal-mist)] uppercase">{{ __('site.nav.contact') }}</a>
