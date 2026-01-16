@@ -9,19 +9,23 @@
             </div>
 
             <div class="text-center text-sm space-y-1 sm:text-right">
-                <p class="font-medium">info@studroyalty.com | +58 (424) 818-1408</p>
-                <p class="text-sm">La Rinconada, Caracas – Venezuela</p>
+                <p class="font-medium">{{ __('site.footer.contact_line') }}</p>
+                <p class="text-sm">{{ __('site.footer.address') }}</p>
             </div>
         </div>
 
         <hr class="border-[var(--border-soft)]">
 
         <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium justify-center sm:justify-start">
-            <a href="#" class="hover:text-[var(--royal-clay)] uppercase">INICIO</a>
-            <a href="{{ route('about') }}" class="hover:text-[var(--royal-clay)] uppercase">SOBRE NOSOTROS</a>
-            <a href="{{ route('services') }}" class="hover:text-[var(--royal-clay)] uppercase">SERVICIOS</a>
-            <a href="{{ route('location') }}" class="hover:text-[var(--royal-clay)] uppercase">UBÍCANOS</a>
-            <a href="{{ route('contact') }}" class="hover:text-[var(--royal-clay)] uppercase">CONTACTO</a>
+            <a href="{{ route('home') }}" class="hover:text-[var(--royal-clay)] uppercase">{{ __('site.nav.home') }}</a>
+            <a href="{{ route('about') }}"
+                class="hover:text-[var(--royal-clay)] uppercase">{{ __('site.nav.about') }}</a>
+            <a href="{{ route('services') }}"
+                class="hover:text-[var(--royal-clay)] uppercase">{{ __('site.nav.services') }}</a>
+            <a href="{{ route('location') }}"
+                class="hover:text-[var(--royal-clay)] uppercase">{{ __('site.nav.location') }}</a>
+            <a href="{{ route('contact') }}"
+                class="hover:text-[var(--royal-clay)] uppercase">{{ __('site.nav.contact') }}</a>
         </div>
 
         <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium uppercase justify-center sm:justify-end">
@@ -35,7 +39,7 @@
         <hr class="border-[var(--border-soft)]">
 
         <div class="pt-2 pb-6 text-center text-xs text-[var(--text-soft)]">
-            <p>© 2025 Stud Royal. Todos los derechos reservados.</p>
+            <p>{{ __('site.footer.copyright', ['year' => date('Y')]) }}</p>
         </div>
 
     </div>

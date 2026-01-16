@@ -1,25 +1,19 @@
 <x-layouts.public>
     <x-slot:title>
-        Servicios | Stud Royal
+        {{ __('site.services.title') }}
     </x-slot:title>
 
-    <x-module-header title="Servicios Ecuestres de Excelencia"
-        description="En Stud Royal ofrecemos un ecosistema integral de servicios diseñados para elevar el rendimiento, bienestar y linaje de cada ejemplar." />
+    <x-module-header title="{{ __('site.services.header') }}" description="{{ __('site.services.intro_1') }}" />
 
     <section class="py-16 md:py-24 bg-[#f1ece6]/80">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto">
                 <div class="space-y-6 text-lg text-gray-700 leading-7">
                     <p class="paragraph">
-                        En Stud Royal desarrollamos todos los servicios que conforman la cadena ecuestre profesional.
-                        Nuestra casa integra ciencia, tradición, manejo técnico y diseño para ofrecer una experiencia
-                        completa: cría, entrenamiento, cuidado veterinario, gestión estratégica y preparación para
-                        competencias.
+                        {{ __('site.services.intro_2') }}
                     </p>
                     <p class="paragraph">
-                        Cada servicio es ejecutado por especialistas que combinan conocimiento técnico, sensibilidad
-                        ecuestre y una visión moderna del hipismo venezolano. Nuestro enfoque es integral: cuidamos la
-                        vida, el rendimiento y el linaje de cada caballo, asegurando su desarrollo en cada etapa.
+                        {{ __('site.services.intro_3') }}
                     </p>
                 </div>
             </div>
@@ -35,15 +29,14 @@
                 {{-- Tarjeta 1: Cría y Selección Genética --}}
                 <div
                     class="bg-[#f1ece6]/80 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col">
-                    <h4 class="text-xl font-semibold text-gray-900 mb-3">DesCría y Selección Genética</h4>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">{{ __('site.services.breeding_and_genetics') }}
+                    </h4>
                     <p class="text-gray-600 text-sm mb-4 flex-grow">
-                        Estudiamos el linaje, la morfología y la genética de cada ejemplar para asegurar crías de alto
-                        rendimiento. Utilizamos técnicas modernas de análisis y fichas de ascendencia que permiten
-                        proyectar atributos como velocidad, resistencia y temperamento.
+                        {{ __('site.services.breeding_and_genetics_desc') }}
                     </p>
                     <div class="mt-auto">
                         <img loading="lazy" src="{{ asset('images/servicios/1.avif') }}"
-                            alt="Imagen de Cría y Selección Genética"
+                            alt="{{ __('site.services.breeding_and_genetics') }}"
                             class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
@@ -51,15 +44,14 @@
                 {{-- Tarjeta 2: Entrenamiento de Alto Rendimiento --}}
                 <div
                     class="bg-[#f1ece6]/80 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col">
-                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Entrenamiento de Alto Rendimiento</h4>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">
+                        {{ __('site.services.high_performance_training') }}</h4>
                     <p class="text-gray-600 text-sm mb-4 flex-grow">
-                        Nuestros métodos de entrenamiento combinan biomecánica, observación técnica y herramientas
-                        digitales de medición. Cada ejemplar recibe un plan personalizado que optimiza su desempeño sin
-                        comprometer su bienestar.
+                        {{ __('site.services.high_performance_training_desc') }}
                     </p>
                     <div class="mt-auto">
                         <img loading="lazy" src="{{ asset('images/servicios/2.avif') }}"
-                            alt="Imagen de Entrenamiento de Alto Rendimiento"
+                            alt="{{ __('site.services.high_performance_training') }}"
                             class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
@@ -67,15 +59,14 @@
                 {{-- Tarjeta 3: Manejo, Cuidado y Bienestar Integral --}}
                 <div
                     class="bg-[#f1ece6]/80 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col">
-                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Manejo, Cuidado y Bienestar Integral</h4>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">{{ __('site.services.comprehensive_care') }}
+                    </h4>
                     <p class="text-gray-600 text-sm mb-4 flex-grow">
-                        Aplicamos protocolos modernos de alimentación, descanso, hidratación, rutinas físicas y
-                        estimulación emocional. El enfoque prioriza la salud integral del caballo: cuerpo,
-                        comportamiento y entorno.
+                        {{ __('site.services.comprehensive_care_desc') }}
                     </p>
                     <div class="mt-auto">
                         <img loading="lazy" src="{{ asset('images/servicios/3.avif') }}"
-                            alt="Imagen de Manejo, Cuidado y Bienestar Integral"
+                            alt="{{ __('site.services.comprehensive_care') }}"
                             class="w-full object-cover rounded-md mt-4 shadow-sm">
                     </div>
                 </div>
@@ -83,10 +74,9 @@
                 {{-- Tarjeta 4: Veterinaria Especializada --}}
                 <div
                     class="bg-[#f1ece6]/80 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col">
-                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Veterinaria Especializada</h4>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">{{ __('site.services.specialized_veterinary') }}</h4>
                     <p class="text-gray-600 text-sm mb-4 flex-grow">
-                        Supervisión veterinaria permanente, terapias regenerativas, monitoreos digitales, diagnósticos
-                        especializados y planes preventivos que aseguran la longevidad y salud óptima del ejemplar.
+                        {{ __('site.services.veterinary_desc') }}
                     </p>
                     <div class="mt-auto">
                         <img loading="lazy" src="{{ asset('images/servicios/4.avif') }}"
@@ -98,11 +88,9 @@
                 {{-- Tarjeta 5: Gestión Estratégica del Potencial del Caballo --}}
                 <div
                     class="bg-[#f1ece6]/80 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col">
-                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Gestión Estratégica del Potencial del Caballo
-                    </h4>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">{{ __('site.services.strategic_management') }}</h4>
                     <p class="text-gray-600 text-sm mb-4 flex-grow">
-                        Acompañamos a los propietarios en decisiones clave: debut, campañas, ritmo de competencia,
-                        potencial reproductivo, valorización y proyección del ejemplar.
+                        {{ __('site.services.strategic_management_desc') }}
                     </p>
                     <div class="mt-auto">
                         <img loading="lazy" src="{{ asset('images/servicios/5.avif') }}"
@@ -114,11 +102,9 @@
                 {{-- Tarjeta 6: Preparación y Presentación en Competencias --}}
                 <div
                     class="bg-[#f1ece6]/80 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col">
-                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Preparación y Presentación en Competencias
-                    </h4>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">{{ __('site.services.competition_preparation') }}</h4>
                     <p class="text-gray-600 text-sm mb-4 flex-grow">
-                        Asesoramos todo el proceso de carrera: equipamiento, estética del caballo y del equipo,
-                        protocolos de pre-pista, paddock y estrategias de presentación.
+                        {{ __('site.services.competition_preparation_desc') }}
                     </p>
                     <div class="mt-auto">
                         <img loading="lazy" src="{{ asset('images/servicios/6.avif') }}"
@@ -135,13 +121,9 @@
                     <div class="carousel-cel">
                         <div
                             class="bg-[#f1ece6]/80 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col h-9/10">
-                            <h4 class="text-xl font-semibold text-gray-900 mb-3">DesCría y Selección Genética</h4>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">{{ __('site.services.breeding_and_genetics') }}</h4>
                             <p class="text-gray-600 text-sm mb-4 flex-grow">
-                                Estudiamos el linaje, la morfología y la genética de cada ejemplar para asegurar crías
-                                de alto
-                                rendimiento. Utilizamos técnicas modernas de análisis y fichas de ascendencia que
-                                permiten
-                                proyectar atributos como velocidad, resistencia y temperamento.
+                                {{ __('site.services.breeding_and_genetics_desc') }}
                             </p>
                             <div class="mt-auto">
                                 <img loading="lazy" src="{{ asset('images/servicios/1.avif') }}"
@@ -153,13 +135,9 @@
                     <div class="carousel-cel">
                         <div
                             class="bg-[#f1ece6]/80 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col h-9/10">
-                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Entrenamiento de Alto Rendimiento</h4>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">{{ __('site.services.high_performance_training') }}</h4>
                             <p class="text-gray-600 text-sm mb-4 flex-grow">
-                                Nuestros métodos de entrenamiento combinan biomecánica, observación técnica y
-                                herramientas
-                                digitales de medición. Cada ejemplar recibe un plan personalizado que optimiza su
-                                desempeño sin
-                                comprometer su bienestar.
+                                {{ __('site.services.high_performance_training_desc') }}
                             </p>
                             <div class="mt-auto">
                                 <img loading="lazy" src="{{ asset('images/servicios/2.avif') }}"
@@ -171,12 +149,9 @@
                     <div class="carousel-cel">
                         <div
                             class="bg-[#f1ece6]/80 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col h-9/10">
-                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Manejo, Cuidado y Bienestar Integral
-                            </h4>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">{{ __('site.services.comprehensive_care') }}</h4>
                             <p class="text-gray-600 text-sm mb-4 flex-grow">
-                                Aplicamos protocolos modernos de alimentación, descanso, hidratación, rutinas físicas y
-                                estimulación emocional. El enfoque prioriza la salud integral del caballo: cuerpo,
-                                comportamiento y entorno.
+                                {{ __('site.services.comprehensive_care_desc') }}
                             </p>
                             <div class="mt-auto">
                                 <img loading="lazy" src="{{ asset('images/servicios/3.avif') }}"
@@ -188,12 +163,9 @@
                     <div class="carousel-cel">
                         <div
                             class="bg-[#f1ece6]/80 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col h-9/10">
-                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Veterinaria Especializada</h4>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">{{ __('site.services.specialized_veterinary') }}</h4>
                             <p class="text-gray-600 text-sm mb-4 flex-grow">
-                                Supervisión veterinaria permanente, terapias regenerativas, monitoreos digitales,
-                                diagnósticos
-                                especializados y planes preventivos que aseguran la longevidad y salud óptima del
-                                ejemplar.
+                                {{ __('site.services.veterinary_desc') }}
                             </p>
                             <div class="mt-auto">
                                 <img loading="lazy" src="{{ asset('images/servicios/4.avif') }}"
@@ -205,13 +177,9 @@
                     <div class="carousel-cel">
                         <div
                             class="bg-[#f1ece6]/80 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col h-9/10">
-                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Gestión Estratégica del Potencial del
-                                Caballo
-                            </h4>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">{{ __('site.services.strategic_management') }}</h4>
                             <p class="text-gray-600 text-sm mb-4 flex-grow">
-                                Acompañamos a los propietarios en decisiones clave: debut, campañas, ritmo de
-                                competencia,
-                                potencial reproductivo, valorización y proyección del ejemplar.
+                                {{ __('site.services.strategic_management_desc') }}
                             </p>
                             <div class="mt-auto">
                                 <img loading="lazy" src="{{ asset('images/servicios/5.avif') }}"
@@ -223,12 +191,9 @@
                     <div class="carousel-cel">
                         <div
                             class="bg-[#f1ece6]/80 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col h-9/10">
-                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Preparación y Presentación en
-                                Competencias
-                            </h4>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">{{ __('site.services.competition_preparation') }}</h4>
                             <p class="text-gray-600 text-sm mb-4 flex-grow">
-                                Asesoramos todo el proceso de carrera: equipamiento, estética del caballo y del equipo,
-                                protocolos de pre-pista, paddock y estrategias de presentación.
+                                {{ __('site.services.competition_preparation_desc') }}
                             </p>
                             <div class="mt-auto">
                                 <img loading="lazy" src="{{ asset('images/servicios/6.avif') }}"
@@ -258,11 +223,9 @@
                 <div
                     class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-200 flex flex-col">
 
-                    <h4 class="text-xl font-semibold text-[#3C4220] mb-3">Equipamiento, Uniformes y Estética
-                        Institucional</h4>
+                    <h4 class="text-xl font-semibold text-[#3C4220] mb-3">{{ __('site.services.equipment_and_accessories') }}</h4>
                     <p class="text-gray-600 text-sm mb-4 flex-grow">
-                        Diseño y desarrollo de piezas estéticas y funcionales: mantas, protectores, bordados, sillas,
-                        placas, uniformes y elementos que representan la identidad Royal.
+                        {{ __('site.services.equipment_and_accessories_desc') }}
                     </p>
                     <div class="mt-auto">
                         <img loading="lazy" src="{{ asset('images/galeria/4.avif') }}"
@@ -275,11 +238,9 @@
                 <div
                     class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-200 flex flex-col">
 
-                    <h4 class="text-xl font-semibold text-[#3C4220] mb-3">Asesoría en Adquisición y Evaluación de
-                        Ejemplares</h4>
+                    <h4 class="text-xl font-semibold text-[#3C4220] mb-3">{{ __('site.services.consulting') }}</h4>
                     <p class="text-gray-600 text-sm mb-4 flex-grow">
-                        Acompañamiento experto en compra o evaluación con análisis técnico, genético y funcional que
-                        garantiza decisiones estratégicas.
+                        {{ __('site.services.consulting_desc') }}
                     </p>
                     <div class="mt-auto">
                         <img loading="lazy" src="{{ asset('images/galeria/1.avif') }}"
@@ -292,12 +253,8 @@
                 <div
                     class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-200 flex flex-col">
 
-                    <h4 class="text-xl font-semibold text-[#3C4220] mb-3">Gestión Documental y Administrativa Ecuestre
-                    </h4>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">
-                        Manejo de registros, fichas de carrera, historiales médicos, permisos, documentación formal y
-                        toda la estructura administrativa del stud.
-                    </p>
+                    <h4 class="text-xl font-semibold text-[#3C4220] mb-3">{{ __('site.services.equestrian_management') }}</h4>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">{{ __('site.services.equestrian_management_desc') }}</p>
                     <div class="mt-auto">
                         <img loading="lazy" src="{{ asset('images/servicios/7.avif') }}"
                             alt="Documentación administrativa ecuestre"
@@ -313,16 +270,14 @@
     <section id="cta" class="bg-[var(--royal-espresso)] py-20">
         <div class="max-w-6xl mx-auto px-6 md:px-12 text-center">
 
-            <h2 class="title-cta">
-                Construimos el futuro de cada ejemplar con precisión, visión y linaje.
-            </h2>
+            <h2 class="title-cta">{{ __('site.services.cta_title') }}</h2>
 
             <p class="paragraph-cta">
-                Agenda una visita personalizada y descubre lo que significa formar parte de Stud Royal.
+                {{ __('site.services.cta_lead') }}
             </p>
 
             <a href="{{ route('contact') }}#formulario" class="btn-cta">
-                Agenda tu visita
+                {{ __('site.services.cta_btn') }}
             </a>
 
         </div>

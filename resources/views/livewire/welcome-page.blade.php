@@ -4,14 +4,9 @@
             <div class="carousel-cell bg-[url(../../public/images/home/1.avif)] bg-cover bg-center w-full h-screen">
                 <div class="flex flex-col justify-end lg:justify-center px-8 lg:px-24 h-full lg:pb-0">
 
-                    <h2 class="text-5xl mb-6 text-[var(--royal-ash)]">El linaje de la
-                        excelencia ecuestre.
-                    </h2>
+                    <h2 class="text-5xl mb-6 text-[var(--royal-ash)]">{{ __('site.welcome.title') }}</h2>
 
-                    <p class="lg:w-1/2 text-white text-xl mb-12 lg:mb-0">Stud Royal es una casa hípica venezolana donde
-                        tradición,
-                        ciencia y visión se unen para formar ejemplares de alto rendimiento. Desde la genética hasta la
-                        pista, elevamos cada etapa del camino ecuestre con precisión, elegancia y propósito.</p>
+                    <p class="lg:w-1/2 text-white text-xl mb-12 lg:mb-0">{{ __('site.welcome.lead') }}</p>
                 </div>
             </div>
             <div class="carousel-cell bg-[url(../../public/images/home/2.avif)] bg-cover bg-center w-full h-screen">
@@ -30,19 +25,22 @@
 
     <section id="quienes" class="max-w-7xl mx-auto md:px-12 px-4 py-20 min-h-screen grid md:grid-cols-2 gap-10">
         <div class="flex flex-col justify-center h-full">
+            @php
+                $quienesTitle = __('site.welcome.quienes_title');
+                $quienesInitial = __('site.welcome.quienes_initial');
+                $quienesRest = mb_substr($quienesTitle, mb_strlen($quienesInitial));
+            @endphp
+
             <h2 class="text-3xl font-bold mb-6 text-[var(--royal-espresso)] leading-none">
-                <span class="text-6xl mr-1 FortalezaPlain">Q</span>uiénes Somos
+                <span class="text-6xl mr-1 FortalezaPlain">{{ $quienesInitial }}</span>{{ $quienesRest }}
             </h2>
-            <h2 class="text-xl font-bold mb-6 ">Una nueva generación del hipismo venezolano
-            </h2>
+            <h2 class="text-xl font-bold mb-6 ">{{ __('site.welcome.quienes_sub') }}</h2>
             <p class="paragraph">
-                Stud Royal nace en el corazón de La Rinconada como un proyecto que honra la herencia del hipismo
-                nacional y abraza la innovación del mundo ecuestre moderno. Somos una casa donde la genética, la
-                técnica, el diseño y la pasión trabajan en armonía para formar leyendas.
+                {{ __('site.welcome.quienes_paragraph') }}
             </p>
             <div class="flex justify-center  lg:justify-start">
                 <a href="{{ route('about') }}" class="lg:w-1/3 w-1/2 btn-3C4220 mt-8 mb-4">
-                    ver más
+                    {{ __('site.welcome.ver_mas') }}
                 </a>
             </div>
         </div>
@@ -73,12 +71,18 @@
 
                 <div class="order-2 lg:pl-8">
 
+                    @php
+                        $filoTitle = __('site.welcome.filosofia_title');
+                        $filoInitial = __('site.welcome.filosofia_initial');
+                        $filoRest = mb_substr($filoTitle, mb_strlen($filoInitial));
+                    @endphp
+
                     <h2 class="text-3xl font-bold mb-6 text-[var(--royal-espresso)] leading-none">
-                        <span class="text-6xl mr-1 FortalezaPlain">N</span>uestra Filosofía
+                        <span class="text-6xl mr-1 FortalezaPlain">{{ $filoInitial }}</span>{{ $filoRest }}
                     </h2>
 
                     <p class="text-lg italic text-gray-700 mb-8 border-l-4 border-[#B89871] pl-4">
-                        Creemos que la grandeza no se improvisa: se hereda, se entrena y se perfecciona.
+                        {{ __('site.welcome.filosofia_lead') }}
                     </p>
 
                     <div class="space-y-6">
@@ -86,27 +90,27 @@
                         <div
                             class="flex items-start p-5 bg-white rounded-tr-2xl rounded-bl-2xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100">
                             <div>
-                                <h4 class="font-bold text-lg text-[var(--royal-espresso)] mb-1">Tradición</h4>
-                                <p class="text-gray-600">Honramos la historia y el linaje del hipismo venezolano e
-                                    internacional, respetando las raíces de la nobleza ecuestre.</p>
+                                <h4 class="font-bold text-lg text-[var(--royal-espresso)] mb-1">
+                                    {{ __('site.values.tradition.title') }}</h4>
+                                <p class="text-gray-600">{{ __('site.values.tradition.text') }}</p>
                             </div>
                         </div>
 
                         <div
                             class="flex items-start p-5 bg-white rounded-tl-2xl rounded-br-2xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100">
                             <div>
-                                <h4 class="font-bold text-lg text-[var(--royal-espresso)] mb-1">Ciencia</h4>
-                                <p class="text-gray-600">Decisiones basadas en datos, análisis genético y métricas de
-                                    rendimiento avanzadas para optimizar el desempeño.</p>
+                                <h4 class="font-bold text-lg text-[var(--royal-espresso)] mb-1">
+                                    {{ __('site.values.science.title') }}</h4>
+                                <p class="text-gray-600">{{ __('site.values.science.text') }}</p>
                             </div>
                         </div>
 
                         <div
                             class="flex items-start p-5 bg-white rounded-tr-2xl rounded-bl-2xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100">
                             <div>
-                                <h4 class="font-bold text-lg text-[var(--royal-espresso)] mb-1">Elegancia</h4>
-                                <p class="text-gray-600">Una estética institucional impecable que define nuestro
-                                    compromiso con la excelencia visual y el estilo en cada detalle.</p>
+                                <h4 class="font-bold text-lg text-[var(--royal-espresso)] mb-1">
+                                    {{ __('site.values.elegance.title') }}</h4>
+                                <p class="text-gray-600">{{ __('site.values.elegance.text') }}</p>
                             </div>
                         </div>
 
@@ -124,18 +128,22 @@
 
                 <div class="order-2 md:order-1 lg:pr-8">
 
+                    @php
+                        $servicesTitle = __('site.welcome.services_header');
+                        $servicesInitial = __('site.welcome.services_initial');
+                        $servicesRest = mb_substr($servicesTitle, mb_strlen($servicesInitial));
+                    @endphp
+
                     <h2 class="text-3xl font-bold mb-6 text-[var(--royal-espresso)] leading-none">
-                        <span class="text-6xl mr-1 FortalezaPlain">S</span>ervicios ecuestres de élite
+                        <span class="text-6xl mr-1 FortalezaPlain">{{ $servicesInitial }}</span>{{ $servicesRest }}
                     </h2>
 
                     <p class="paragraph">
-                        Desarrollamos cada una de las áreas esenciales del mundo ecuestre profesional: cría,
-                        entrenamiento, manejo, bienestar, veterinaria, preparación para competencias, adquisición de
-                        ejemplares y gestión integral del stud.
+                        {{ __('site.welcome.services_text') }}
                     </p>
                     <div class="flex justify-center lg:justify-start">
                         <a href="{{ route('services') }}" class="btn-3C4220 mt-8">
-                            Ver Servicios
+                            {{ __('site.welcome.services_btn') }}
                         </a>
                     </div>
 
@@ -159,14 +167,22 @@
                 ['id' => 4, 'url' => 'images/galeria/4.avif', 'description' => 'Foto B'],
                 ['id' => 5, 'url' => 'images/galeria/5.avif', 'description' => 'Foto B'],
             ];
+
+            $galeria_home = array_map(function ($item) {
+                $item['url'] = asset($item['url']);
+                return $item;
+            }, $galeria_home);
+            $galeriaTitle = __('site.welcome.galeria_title');
+            $galeriaInitial = __('site.welcome.galeria_initial');
+            $galeriaRest = mb_substr($galeriaTitle, mb_strlen($galeriaInitial));
         @endphp
+
         <div class="max-w-7xl mx-auto px-4 pb-4">
             <h2 class="text-3xl font-bold mb-6 text-[var(--royal-espresso)] leading-none">
-                <span class="text-6xl mr-1 FortalezaPlain">U</span>n vistazo a nuestra casa
+                <span class="text-6xl mr-1 FortalezaPlain">{{ $galeriaInitial }}</span>{{ $galeriaRest }}
             </h2>
             <p class="paragraph">
-                Cada detalle del Stud <span class="italic">sus espacios, procesos y estética</span> refleja el linaje y
-                la visión que nos definen.
+                {{ __('site.welcome.galeria_text1') }} <span class="italic">{{ __('site.welcome.galeria_text2') }}</span> {{ __('site.welcome.galeria_text3') }}
             </p>
         </div>
 
@@ -175,20 +191,9 @@
 
     <section id="cta" class="bg-[var(--royal-espresso)] py-20">
         <div class="max-w-6xl mx-auto px-6 md:px-12 text-center">
-
-            <h2 class="title-cta">
-                Vive la experiencia Royal
-            </h2>
-
-            <p class="paragraph-cta">
-                Coordinamos visitas guiadas para propietarios y aliados del mundo ecuestre.
-                Descubre cómo trabajamos el linaje, la ciencia y la excelencia.
-            </p>
-
-            <a href="{{ route('contact') }}#formulario" class="btn-cta">
-                Agenda tu visita
-            </a>
-
+            <h2 class="title-cta">{{ __('site.welcome.cta_title') }}</h2>
+            <p class="paragraph-cta">{{ __('site.welcome.cta_lead') }}</p>
+            <a href="{{ route('contact') }}#formulario" class="btn-cta">{{ __('site.welcome.cta_btn') }}</a>
         </div>
     </section>
 </div>

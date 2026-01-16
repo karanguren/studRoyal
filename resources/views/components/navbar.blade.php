@@ -9,10 +9,10 @@
 
             <ul class="hidden md:flex space-x-6 font-medium order-1 md:mr-12">
                 <li><a href="{{ route('about') }}"
-                        class="text-[#C8AF77] text-shadow-lg hover:text-[var(--royal-mist)] uppercase">Sobre
-                        nosotros</a></li>
+                        class="text-[#C8AF77] text-shadow-lg hover:text-[var(--royal-mist)] uppercase">{{ __('site.nav.about') }}</a>
+                </li>
                 <li><a href="{{ route('services') }}"
-                        class="text-[#C8AF77] text-shadow-lg hover:text-[var(--royal-mist)] uppercase">Servicios</a>
+                        class="text-[#C8AF77] text-shadow-lg hover:text-[var(--royal-mist)] uppercase">{{ __('site.nav.services') }}</a>
                 </li>
             </ul>
 
@@ -23,10 +23,10 @@
 
             <ul class="hidden md:flex space-x-6 font-medium order-3 md:ml-12">
                 <li><a href="{{ route('contact') }}"
-                        class="text-[#C8AF77] text-shadow-lg hover:text-[var(--royal-mist)] uppercase">Contacto</a>
+                        class="text-[#C8AF77] text-shadow-lg hover:text-[var(--royal-mist)] uppercase">{{ __('site.nav.contact') }}</a>
                 </li>
                 <li><a href="{{ route('location') }}"
-                        class="text-[#C8AF77] text-shadow-lg hover:text-[var(--royal-mist)] uppercase">Ubícanos</a>
+                        class="text-[#C8AF77] text-shadow-lg hover:text-[var(--royal-mist)] uppercase">{{ __('site.nav.location') }}</a>
                 </li>
             </ul>
 
@@ -37,10 +37,14 @@
         </div>
 
         <ul id="mobileMenu" class="md:hidden hidden flex-col space-y-4 mt-4 p-4 rounded-lg font-medium">
-            <li><a class="text-[#C8AF77] text-shadow-lg uppercase" href="{{ route('about') }}">Sobre nosotros</a></li>
-            <li><a class="text-[#C8AF77] text-shadow-lg uppercase" href="{{ route('services') }}">Servicios</a></li>
-            <li><a class="text-[#C8AF77] text-shadow-lg uppercase" href="{{ route('contact') }}">Contacto</a></li>
-            <li><a class="text-[#C8AF77] text-shadow-lg uppercase" href="{{ route('location') }}">Ubícanos</a></li>
+            <li><a class="text-[#C8AF77] text-shadow-lg uppercase"
+                    href="{{ route('about') }}">{{ __('site.nav.about') }}</a></li>
+            <li><a class="text-[#C8AF77] text-shadow-lg uppercase"
+                    href="{{ route('services') }}">{{ __('site.nav.services') }}</a></li>
+            <li><a class="text-[#C8AF77] text-shadow-lg uppercase"
+                    href="{{ route('contact') }}">{{ __('site.nav.contact') }}</a></li>
+            <li><a class="text-[#C8AF77] text-shadow-lg uppercase"
+                    href="{{ route('location') }}">{{ __('site.nav.location') }}</a></li>
         </ul>
     </nav>
 

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
 use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 
@@ -45,4 +46,26 @@ Route::middleware(['auth'])->group(function () {
             ),
         )
         ->name('two-factor.show');
+});
+
+// RUTA: setear locale en sesión + cookie y redirigir atrás
+Route::get('/locale/{locale}', function ($locale) {
+    $allowed = ['es', 'en'];
+    if (!in_array($locale, $allowed)) {
+        abort(404);
+    }
+
+    // Guardar en sesión
+    session(['locale' => $locale]);
+
+    // Redirigir atrás y añadir cookie permanente del locale
+    return redirect()->back()->withCookie(cookie()->forever('locale', $locale));
+})->name('setLocale');
+
+// Aplicar el locale antes de renderizar vistas (usa sesión o cookie)
+View::composer('*', function ($view) {
+    $locale = session('locale') ?: request()->cookie('locale') ?: config('app.locale');
+    if ($locale && in_array($locale, ['es', 'en'])) {
+        app()->setLocale($locale);
+    }
 });

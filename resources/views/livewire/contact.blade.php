@@ -1,10 +1,9 @@
 <x-layouts.public>
     <x-slot:title>
-        Contáctanos | Stud Royal
+        {{ __('site.contact.title') }}
     </x-slot:title>
 
-
-    <x-module-header title="Contacto" description="Ponte en contacto con nuestra casa ecuestre"
+    <x-module-header title="{{ __('site.contact.header') }}" description="{{ __('site.contact.header_desc') }}"
         backgroundUrl="images/home/5.avif" />
 
     <section id="contactos" class="py-16 md:py-16 bg-[#f1ece6]/80">
@@ -14,8 +13,7 @@
                 CONTACTO DIRECTO
             </h2> --}}
             <p class="max-w-4xl mx-auto text-lg text-gray-600 mb-8 ">
-                Nuestro equipo responderá tu solicitud con la discreción, calidad y atención que caracterizan a nuestra
-                casa.
+                {{ __('site.contact.desc') }}
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -24,13 +22,13 @@
                     class="bg-white p-6 md:p-8 border border-gray-200 rounded-lg shadow-sm transition duration-300 hover:shadow-lg">
                     <i class="fas fa-phone-alt text-2xl text-[#3C4220] mb-4"></i>
                     <h3 class="font-semibold text-lg text-gray-800 mb-2 tracking-wider uppercase">
-                        Teléfono
+                        {{ __('site.contact.phone') }}
                     </h3>
                     <p class="text-2xl font-medium text-[#3C4220] mb-4">
-                        +58 (424) 818-1408
+                        {{ __('site.contact.phone_value') }}
                     </p>
                     <p class="text-sm text-gray-600">
-                        Atención directa y asistencia personalizada para consultas y coordinación de visitas.
+                        {{ __('site.contact.phone_note') }}
                     </p>
                 </div>
 
@@ -38,13 +36,13 @@
                     class="bg-white p-6 md:p-8 border border-gray-200 rounded-lg shadow-sm transition duration-300 hover:shadow-lg">
                     <i class="fas fa-envelope text-2xl text-[#3C4220] mb-4"></i>
                     <h3 class="font-semibold text-lg text-gray-800 mb-2 tracking-wider uppercase">
-                        Correo electrónico
+                        {{ __('site.contact.email') }}
                     </h3>
                     <p class="text-xl font-medium text-[#3C4220] mb-4">
-                        info@studroyalty.com
+                        {{ __('site.contact.email_value') }}
                     </p>
                     <p class="text-sm text-gray-600">
-                        Para solicitudes formales, alianzas, documentación o información general.
+                        {{ __('site.contact.email_note') }}
                     </p>
                 </div>
             </div>
