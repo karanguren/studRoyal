@@ -1,62 +1,64 @@
 <div>
-    @php $current = app()->getLocale(); @endphp
-
     <nav id="navbar"
         class="fixed top-0 left-0 w-full z-50 transition-all duration-300 
                bg-transparent 
                backdrop-blur-md bg-white/10 md:backdrop-blur-none md:bg-transparent
                md:hover:backdrop-blur-md md:hover:bg-white/10">
 
-        <div class="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between md:justify-between relative h-24">
+        <div class="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between relative h-24">
 
-            <ul class="hidden md:flex space-x-8 font-medium items-center w-1/3 justify-end pr-16">
+            <ul class="hidden md:flex space-x-6 font-medium items-center justify-end flex-1 pr-16">
                 <li><a href="{{ route('about') }}"
-                        class="text-[#C8AF77] text-shadow-lg hover:text-white transition-colors uppercase">{{ __('site.nav.about') }}</a>
+                        class="text-[#C8AF77] text-shadow-lg hover:text-[var(--royal-mist)] uppercase">{{ __('site.nav.about') }}</a>
                 </li>
                 <li><a href="{{ route('services') }}"
-                        class="text-[#C8AF77] text-shadow-lg hover:text-white transition-colors uppercase">{{ __('site.nav.services') }}</a>
+                        class="text-[#C8AF77] text-shadow-lg hover:text-[var(--royal-mist)] uppercase">{{ __('site.nav.services') }}</a>
                 </li>
             </ul>
 
-            <a href="{{ route('home') }}" 
-               class="block z-50 md:absolute md:left-1/2 md:-translate-x-1/2">
+            <a href="{{ route('home') }}"
+                class="block z-50 md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
                 <img loading="lazy" src="{{ asset('images/logo/logo-gold.png') }}" alt="Stud Royal Logo"
                     class="h-20 w-auto" />
             </a>
 
-            <ul class="hidden md:flex space-x-8 font-medium items-center w-1/3 justify-start pl-16">
-                <li><a href="{{ route('contact') }}"
-                        class="text-[#C8AF77] text-shadow-lg hover:text-white transition-colors uppercase">{{ __('site.nav.contact') }}</a>
-                </li>
-                <li><a href="{{ route('location') }}"
-                        class="text-[#C8AF77] text-shadow-lg hover:text-white transition-colors uppercase">{{ __('site.nav.location') }}</a>
-                </li>
-                
-                <li class="flex gap-2 ml-4 border-l border-[#C8AF77]/30 pl-4 text-xs">
+            <div class="hidden md:flex items-center flex-1 pl-16">
+                <ul class="flex space-x-6 font-medium">
+                    <li><a href="{{ route('contact') }}"
+                            class="text-[#C8AF77] text-shadow-lg hover:text-[var(--royal-mist)] uppercase">{{ __('site.nav.contact') }}</a>
+                    </li>
+                    <li><a href="{{ route('location') }}"
+                            class="text-[#C8AF77] text-shadow-lg hover:text-[var(--royal-mist)] uppercase">{{ __('site.nav.location') }}</a>
+                    </li>
+                </ul>
+
+                <div class="ml-auto flex gap-4 pl-6 border-l border-[#C8AF77]/20">
+                    @php $current = app()->getLocale(); @endphp
                     <a href="{{ route('setLocale', 'es') }}"
-                        class="transition-colors {{ $current === 'es' ? 'text-white font-bold' : 'text-[#C8AF77] hover:text-white' }}">
+                        class="px-2 py-1 rounded transition-colors {{ $current === 'es' ? 'text-white bg-[#C8AF77]/20' : 'text-[#C8AF77]' }}">
                         ES
                     </a>
-                    <span class="text-[#C8AF77]/30">|</span>
                     <a href="{{ route('setLocale', 'en') }}"
-                        class="transition-colors {{ $current === 'en' ? 'text-white font-bold' : 'text-[#C8AF77] hover:text-white' }}">
+                        class="px-2 py-1 rounded transition-colors {{ $current === 'en' ? 'text-white bg-[#C8AF77]/20' : 'text-[#C8AF77]' }}">
                         EN
                     </a>
-                </li>
-            </ul>
+                </div>
+            </div>
 
-            <button id="menuBtn"
-                class="md:hidden block text-2xl text-[#C8AF77] text-shadow-lg focus:outline-none">
+            <button id="menuBtn" class="md:hidden block text-2xl absolute right-4 text-[#C8AF77] text-shadow-lg">
                 ☰
             </button>
         </div>
 
-        <ul id="mobileMenu" class="md:hidden hidden flex-col space-y-4 mt-0 p-6 font-medium">
-            <li><a class="text-[#C8AF77] text-lg uppercase block" href="{{ route('about') }}">{{ __('site.nav.about') }}</a></li>
-            <li><a class="text-[#C8AF77] text-lg uppercase block" href="{{ route('services') }}">{{ __('site.nav.services') }}</a></li>
-            <li><a class="text-[#C8AF77] text-lg uppercase block" href="{{ route('contact') }}">{{ __('site.nav.contact') }}</a></li>
-            <li><a class="text-[#C8AF77] text-lg uppercase block" href="{{ route('location') }}">{{ __('site.nav.location') }}</a></li>
-            
+        <ul id="mobileMenu" class="md:hidden hidden flex-col space-y-4 mt-4 p-4 rounded-lg font-medium">
+            <li><a class="text-[#C8AF77] text-shadow-lg uppercase"
+                    href="{{ route('about') }}">{{ __('site.nav.about') }}</a></li>
+            <li><a class="text-[#C8AF77] text-shadow-lg uppercase"
+                    href="{{ route('services') }}">{{ __('site.nav.services') }}</a></li>
+            <li><a class="text-[#C8AF77] text-shadow-lg uppercase"
+                    href="{{ route('contact') }}">{{ __('site.nav.contact') }}</a></li>
+            <li><a class="text-[#C8AF77] text-shadow-lg uppercase"
+                    href="{{ route('location') }}">{{ __('site.nav.location') }}</a></li>
             <li class="flex gap-6 pt-6 mt-4 border-t border-[#C8AF77]/20">
                 <a href="{{ route('setLocale', 'es') }}"
                     class="px-2 py-1 rounded transition-colors {{ $current === 'es' ? 'text-white bg-[#C8AF77]/20' : 'text-[#C8AF77]' }}">
