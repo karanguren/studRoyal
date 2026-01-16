@@ -1,37 +1,35 @@
 <x-layouts.public>
     <x-slot:title>
-        Sobre Nosotros | Stud Royal
+        {{ __('site.about.title') }}
     </x-slot:title>
 
-    <x-module-header title="El linaje de la excelencia ecuestre" />
-
+    <x-module-header title="{{ __('site.about.header') }}" />
 
     <section class="py-16 md:py-24 bg-[#f1ece6]/80">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="space-y-6">
                 <p class="paragraph">
-                    En el corazón del hipismo venezolano, Stud Royal surge como la nueva casa ecuestre donde
-                    tradición, ciencia y visión se unen para formar leyendas. Un espacio donde cada detalle <span
-                        class="italic">desde
-                        la genética hasta el diseño</span> refleja nobleza, precisión y un compromiso absoluto con la
-                    excelencia.
+                    {{ __('site.about.intro_paragraph1') }} <span class="italic">{{ __('site.about.intro_paragraph2') }}</span> {{ __('site.about.intro_paragraph3') }}
                 </p>
             </div>
         </div>
-
     </section>
 
     <section class="flex items-center justify-center">
         <a href="{{ asset('docs/FichatecnicaTheDuke.pdf') }}" target="_blank" class="btn-3C4220 mt-8">
-            Ficha técnica The Duke
+            {{ __('site.about.ficha_btn') }}
         </a>
     </section>
 
     <section id="historia" class="py-16 md:py-24 bg-white">
+        @php
+            $history_title = __('site.about.history_title');
+            $history_initial = __('site.about.history_initial');
+            $historyRest = mb_substr($history_title, mb_strlen($history_initial));
+        @endphp
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl font-bold mb-12 text-[var(--royal-espresso)] leading-none text-center">
-                <span class="text-6xl mr-1 FortalezaPlain">N</span>uestra Historia: La Evolución de una Casa Hípica
-                Moderna
+                <span class="text-6xl mr-1 FortalezaPlain">{{ $history_initial }}</span>{{ $historyRest }}
             </h2>
 
             <div class="space-y-12 text-gray-700 relative hidden md:block">
@@ -40,33 +38,7 @@
                 </div>
 
                 @php
-                    $historyItems = [
-                        [
-                            'title' => 'Inspiración y legado familiar',
-                            'text' =>
-                                'Stud Royal nace de una tradición ecuestre que recorre generaciones. Una pasión que comenzó en las tribunas de La Rinconada, donde las carreras representan más que competencia: son cultura, identidad y un símbolo del espíritu venezolano.',
-                        ],
-                        [
-                            'title' => 'El encuentro entre tradición y visión',
-                            'text' =>
-                                'Durante décadas, el hipismo en Venezuela se consolidó como uno de los deportes con mayor arraigo nacional. En La Rinconada surgió la primera chispa de esta casa: la intención de elevar el deporte a estándares internacionales sin perder su esencia local.',
-                        ],
-                        [
-                            'title' => 'El nacimiento de Stud Royal',
-                            'text' =>
-                                'La marca se formaliza como respuesta a un nuevo momento del hipismo: propietarios que buscan profesionalización, tecnología, genética, rendimiento medible y una estética impecable.',
-                        ],
-                        [
-                            'title' => 'Innovación aplicada al desempeño',
-                            'text' =>
-                                'La incorporación de estudios genéticos, biometría, softwares de rendimiento y entrenamientos de precisión posicionan al stud como pionero.',
-                        ],
-                        [
-                            'title' => 'El diseño como declaración de identidad',
-                            'text' =>
-                                'La estética burgundy, dorado royal y verde oliva — colores que representan nobleza, victoria y conexión con la tierra — consolidan a Stud Royal como una marca ecuestre de élite.',
-                        ],
-                    ];
+                    $historyItems = __('site.about.history');
                 @endphp
 
                 @foreach ($historyItems as $index => $item)
@@ -75,12 +47,9 @@
                     @endphp
 
                     <div class="flex w-full relative">
-
                         <div
                             class="w-full md:w-1/2 md:px-6 {{ $isLeft ? 'md:mr-auto' : 'md:ml-auto' }} flex {{ $isLeft ? 'md:justify-end' : '' }}">
-
                             <div class="w-full max-w-lg">
-
                                 <div
                                     class="hidden md:block absolute top-1/2 w-3 h-3 bg-[#B89871] rounded-full z-10 transform -translate-y-1/2 
                                     {{ $isLeft ? 'right-1/2 mr-[5px]' : 'left-1/2 ml-[5px]' }}">
@@ -126,32 +95,24 @@
                 <div class="order-2 md:order-1 lg:pr-8">
 
                     <h2 class="text-3xl font-bold mb-8 text-[var(--royal-espresso)] leading-none">
-                        <span class="text-6xl mr-1 FortalezaPlain">N</span>uestra Declaración de Grandeza
+                        {{ __('site.about.declaration_title') }}
                     </h2>
 
                     <div class="space-y-4 text-gray-700">
                         <p class="font-serif italic text-xl text-gray-800 border-l-2 border-[#3C4220] pl-3">
-                            "Hay casas que se construyen con ladrillos. Y otras, con legado."
+                            {{ __('site.about.declaration_quote') }}
                         </p>
                         <p class="paragraph">
-                            Stud Royal nace del espíritu de quienes entienden que la grandeza no se improvisa: se
-                            hereda, se entrena
-                            y se perfecciona.
+                            {{ __('site.about.declaration_p1') }}
                         </p>
                         <p class="paragraph">
-                            Somos la unión entre dos mundos: la nobleza de la tradición y la precisión de la ciencia.
-                            Cada caballo,
-                            cada carrera y cada decisión responde a una misma convicción: elevar el hipismo venezolano
-                            hacia un
-                            nuevo estándar.
+                            {{ __('site.about.declaration_p2') }}
                         </p>
                         <p class="paragraph">
-                            Estudiamos la genética como arte, medimos el rendimiento como ciencia y cuidamos cada
-                            detalle como un
-                            acto de respeto hacia el linaje ecuestre.
+                            {{ __('site.about.declaration_p3') }}
                         </p>
                         <p class="paragraph">
-                            Nuestra casa es burgundy, dorado royal y verde oliva. Es visión, elegancia y propósito.
+                            {{ __('site.about.declaration_p4') }}
                         </p>
                     </div>
 
@@ -176,21 +137,24 @@
                 </div>
 
                 <div class="order-1 md:order-2 lg:pl-8">
+                    @php
+                        $aboutFiloTitle = __('site.about.filosofia_title');
+                        $aboutFiloInitial = __('site.about.filosofia_initial');
+                        $aboutFiloRest = mb_substr($aboutFiloTitle, mb_strlen($aboutFiloInitial));
+                    @endphp
+
                     <h2 class="text-3xl font-bold mb-8 text-[var(--royal-espresso)] leading-none">
-                        <span class="text-6xl mr-1 FortalezaPlain">F</span>ilosofía y Valores
+                        <span class="text-6xl mr-1 FortalezaPlain">{{ $aboutFiloInitial }}</span>{{ $aboutFiloRest }}
                     </h2>
 
                     <h4 class="text-xl font-semibold text-[#3C4220] mb-3 pb-1 inline-block">
-                        Filosofía</h4>
+                        {{ __('site.about.philosophy_heading') }}</h4>
                     <p class="paragraph mb-8">
-                        En Stud Royal creemos que la <span class="italic">excelencia es una práctica diaria</span>.
-                        Nuestro propósito es honrar
-                        el linaje ecuestre con una visión moderna: integrar la tradición del hipismo venezolano con la
-                        innovación, la ciencia y el diseño contemporáneo.
+                        {{ __('site.about.philosophy_paragraph') }}
                     </p>
 
                     <h4 class="text-xl font-semibold text-[#3C4220] mb-4 pb-1 inline-block">
-                        Valores</h4>
+                        {{ __('site.about.values_heading') }}</h4>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-700">
                         <div class="flex items-start">
                             <div>
@@ -202,9 +166,25 @@
                                             <path d="M8 1L14 8 8 15 2 8z" />
                                         </svg>
                                     </span>
-                                    Nobleza:
+                                    {{ __('site.values.nobility.title') }}:
                                 </span>
-                                <span class="text-sm">Actuamos con integridad y respeto inquebrantable.</span>
+                                <span class="text-sm">{{ __('site.values.nobility.text') }}</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div>
+                                <span class="font-bold block">
+                                    <span
+                                        class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 16 16" fill="#B89871">
+                                            <path d="M8 1L14 8 8 15 2 8z" />
+                                        </svg>
+                                    </span>
+                                    {{ __('site.values.precision.title') }}:
+                                </span>
+                                <span class="text-sm">{{ __('site.values.precision.text') }}</span>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -217,9 +197,9 @@
                                             <path d="M8 1L14 8 8 15 2 8z" />
                                         </svg>
                                     </span>
-                                    Precisión:
+                                    {{ __('site.values.tradition.title') }}:
                                 </span>
-                                <span class="text-sm">Decisiones basadas en datos rigurosos y ciencia aplicada.</span>
+                                <span class="text-sm">{{ __('site.values.tradition.text') }}</span>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -232,9 +212,9 @@
                                             <path d="M8 1L14 8 8 15 2 8z" />
                                         </svg>
                                     </span>
-                                    Tradición:
+                                    {{ __('site.values.innovation.title') }}:
                                 </span>
-                                <span class="text-sm">Honramos la rica historia y herencia del hipismo.</span>
+                                <span class="text-sm">{{ __('site.values.innovation.text') }}</span>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -247,9 +227,9 @@
                                             <path d="M8 1L14 8 8 15 2 8z" />
                                         </svg>
                                     </span>
-                                    Innovación:
+                                    {{ __('site.values.elegance.title') }}:
                                 </span>
-                                <span class="text-sm">Tecnología y genética al servicio del máximo rendimiento.</span>
+                                <span class="text-sm">{{ __('site.values.elegance.text') }}</span>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -262,25 +242,9 @@
                                             <path d="M8 1L14 8 8 15 2 8z" />
                                         </svg>
                                     </span>
-                                    Elegancia:
+                                    {{ __('site.values.vision.title') }}:
                                 </span>
-                                <span class="text-sm">Una estética impecable en cada detalle y presentación.</span>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div>
-                                <span class="font-bold block">
-                                    <span
-                                        class="text-[#B89871] text-xl mr-2 leading-none select-none inline-block align-middle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                            viewBox="0 0 16 16" fill="#B89871">
-                                            <path d="M8 1L14 8 8 15 2 8z" />
-                                        </svg>
-                                    </span>
-                                    Visión de Futuro:
-                                </span>
-                                <span class="text-sm">Una casa que evoluciona, invirtiendo en el mañana del
-                                    deporte.</span>
+                                <span class="text-sm">{{ __('site.values.vision.text') }}</span>
                             </div>
                         </div>
                     </div>
@@ -298,15 +262,24 @@
                 ['id' => 9, 'url' => 'images/galeria/9.avif', 'description' => 'Foto B'],
                 ['id' => 10, 'url' => 'images/galeria/10.avif', 'description' => 'Foto B'],
             ];
+
+            // Convertir rutas relativas a URLs completas
+            $galeria_about = array_map(function ($item) {
+                $item['url'] = asset($item['url']);
+                return $item;
+            }, $galeria_about);
+
+            $gallery_title = __('site.about.gallery_title');
+            $gallery_initial = __('site.about.gallery_initial');
+            $galleryRest = mb_substr($gallery_title, mb_strlen($gallery_initial));
         @endphp
         <div class="max-w-7xl mx-auto px-4 pb-4">
             <h2 class="text-3xl font-bold mb-6 text-[var(--royal-espresso)]"></h2>
             <h2 class="text-3xl font-bold mb-6 text-[var(--royal-espresso)] leading-none">
-                <span class="text-6xl mr-1 FortalezaPlain">N</span>uestra Casa en Imágenes
+                <span class="text-6xl mr-1 FortalezaPlain">{{ $gallery_initial }}</span>{{ $galleryRest }}
             </h2>
             <p class="paragraph">
-                Cada espacio de Stud Royal refleja nuestra esencia: tradición, elegancia y precisión. Esta selección de
-                imágenes muestra el universo visual y la dedicación detrás de cada detalle.
+                {{ __('site.about.gallery_text') }}
             </p>
         </div>
 
@@ -317,19 +290,18 @@
         <div class="max-w-6xl mx-auto px-6 md:px-12 text-center">
 
             <h2 class="title-cta">
-                Agenda tu visita a Stud Royal
+                {{ __('site.about.call_to_action.title') }}
             </h2>
 
             <p class="paragraph-cta">
-                Conoce de cerca nuestra casa, nuestros procesos y la filosofía que nos mueve. Abrimos nuestras puertas
-                para que propietarios, entrenadores y aliados vivan la experiencia Royal desde adentro.
+                {{ __('site.about.call_to_action.lead') }}
                 <br>
                 <br>
-                Agenda una visita personalizada y comienza a formar parte del linaje de la excelencia.
+                {{ __('site.about.call_to_action.lead1') }}
             </p>
 
             <a href="{{ route('contact') }}#formulario" class="btn-cta">
-                Agenda tu visita
+                {{ __('site.about.call_to_action.btn') }}
             </a>
 
         </div>
