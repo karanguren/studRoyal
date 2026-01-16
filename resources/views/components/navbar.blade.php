@@ -6,6 +6,19 @@
                md:hover:backdrop-blur-md md:hover:bg-white/10">
 
         <div class="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between md:justify-center relative">
+            
+            <div class="absolute right-14 md:right-4 flex gap-1 items-center text-xs md:text-sm font-bold">
+                @php $current = app()->getLocale(); @endphp
+                <a href="{{ route('setLocale', 'es') }}"
+                    class="px-2 py-1 rounded transition-colors {{ $current === 'es' ? 'text-white bg-[#C8AF77]/20' : 'text-[#C8AF77]' }}">
+                    ES
+                </a>
+                <span class="text-[#C8AF77]/50">|</span>
+                <a href="{{ route('setLocale', 'en') }}"
+                    class="px-2 py-1 rounded transition-colors {{ $current === 'en' ? 'text-white bg-[#C8AF77]/20' : 'text-[#C8AF77]' }}">
+                    EN
+                </a>
+            </div>
 
             <ul class="hidden md:flex space-x-6 font-medium order-1 md:mr-12">
                 <li><a href="{{ route('about') }}"
@@ -37,14 +50,10 @@
         </div>
 
         <ul id="mobileMenu" class="md:hidden hidden flex-col space-y-4 mt-4 p-4 rounded-lg font-medium">
-            <li><a class="text-[#C8AF77] text-shadow-lg uppercase"
-                    href="{{ route('about') }}">{{ __('site.nav.about') }}</a></li>
-            <li><a class="text-[#C8AF77] text-shadow-lg uppercase"
-                    href="{{ route('services') }}">{{ __('site.nav.services') }}</a></li>
-            <li><a class="text-[#C8AF77] text-shadow-lg uppercase"
-                    href="{{ route('contact') }}">{{ __('site.nav.contact') }}</a></li>
-            <li><a class="text-[#C8AF77] text-shadow-lg uppercase"
-                    href="{{ route('location') }}">{{ __('site.nav.location') }}</a></li>
+            <li><a class="text-[#C8AF77] text-shadow-lg uppercase" href="{{ route('about') }}">{{ __('site.nav.about') }}</a></li>
+            <li><a class="text-[#C8AF77] text-shadow-lg uppercase" href="{{ route('services') }}">{{ __('site.nav.services') }}</a></li>
+            <li><a class="text-[#C8AF77] text-shadow-lg uppercase" href="{{ route('contact') }}">{{ __('site.nav.contact') }}</a></li>
+            <li><a class="text-[#C8AF77] text-shadow-lg uppercase" href="{{ route('location') }}">{{ __('site.nav.location') }}</a></li>
         </ul>
     </nav>
 
@@ -58,36 +67,21 @@
         });
 
         const SCROLL_CLASSES = ["backdrop-blur-md", "bg-white/10"];
-
         const TOP_CLASSES = ["md:hover:backdrop-blur-md", "md:hover:bg-white/10"];
-
         const MD_NO_BLUR = ["md:backdrop-blur-none", "md:bg-transparent"];
-
 
         window.addEventListener("scroll", () => {
             if (window.scrollY > 10) {
-                // ESTADO SCROLLED (Blur Fijo en Desktop)
-
-                // 1. Quitar la lógica de hover y de transparencia total en Desktop
                 TOP_CLASSES.forEach(cls => navbar.classList.remove(cls));
                 MD_NO_BLUR.forEach(cls => navbar.classList.remove(cls));
-
-                // 2. Aplicar el blur y fondo fijo en Desktop
                 SCROLL_CLASSES.forEach(cls => navbar.classList.add(cls));
-
             } else {
-                // ESTADO TOP (Transparente, Hover Blur en Desktop)
-
-                // 1. Quitar la lógica del scroll blur/fondo
                 SCROLL_CLASSES.forEach(cls => navbar.classList.remove(cls));
-
-                // 2. Aplicar la lógica de hover y la transparencia total en Desktop
                 TOP_CLASSES.forEach(cls => navbar.classList.add(cls));
                 MD_NO_BLUR.forEach(cls => navbar.classList.add(cls));
             }
         });
 
-        // Ejecutar la función de scroll una vez para asegurar el estado inicial TOP en desktop
         window.dispatchEvent(new Event('scroll'));
     </script>
 </div>
